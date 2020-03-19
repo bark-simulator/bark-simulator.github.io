@@ -1,4 +1,4 @@
-# HOW-TO
+# HOW-TO (USE BRANCH WEBSITE!)
 1. install Gatsby.js-CLI by running `npm install -g gatsby-cli`.
 2. `npm install`
 3. `gatsby develop`
