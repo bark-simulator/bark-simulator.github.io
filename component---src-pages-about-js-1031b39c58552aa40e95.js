@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),r=(a("Wbzz"),a("Bl7J")),u=a("vrFN");t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"About"}),l.a.createElement("h1",null,"About"),l.a.createElement("p",null,"BARK was created by Julian Bernhard, Klemens Esterle, Patrick Hart and Tobias Kessler."))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-1031b39c58552aa40e95.js.map
