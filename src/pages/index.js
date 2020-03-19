@@ -10,9 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>BARK - A semantic simulation framework.</h1>
     <p>Develop the next generation of behavior models using BARK.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <Image class="rounded-lg w-2" />
     <Link to="/about/">About</Link>
   </Layout>
 )

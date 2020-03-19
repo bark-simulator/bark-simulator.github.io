@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `BARK - Behavior Benchmark`,
+    title: `BARK`,
     description: `Kick off the next generation of behavior model development.`,
     author: `@hart`,
   },
