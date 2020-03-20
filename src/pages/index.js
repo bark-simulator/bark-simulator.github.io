@@ -9,32 +9,47 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
       <div class="flex justify-center mt-4">
-        <div class="w-1/2 bg-gray-100 p-4">
-          <h1 class="text-3xl text-gray-800 font-semibold mb-">A semantic simulation framework.</h1>
-          <p class="tracking-wide leading-relaxed">Develop the next generation of behavior models using BARK.</p>
+        <div class="w-1/2 bg-gray-100 p-12 px-24 text-center">
+          <h1 class="text-4xl text-gray-800 font-semibold mb-3">A semantic simulation framework.</h1>
+          <p class="tracking-wide text-xl leading-relaxed">
+            Develop the next generation of behavior models.
+            BARK is a behavior model-centric simulation framework that enables fast-prototyping and development of novel approaches.
+            It offers a wide range of <i>state-of-the-art</i> behavior models for autonomous driving to get started with.
+          </p>
         </div>
-        <div class="w-1/2 bg-gray-500">
+        <div class="w-1/2">
           <Image />        
         </div>
       </div>
       <div class="flex mt-8">
-        <div class="w-1/2 bg-gray-500">
+        <div class="w-1/2">
           <Image />       
         </div>
-        <div class="w-1/2 bg-gray-100 p-4">
-          <h1 class="text-3xl text-gray-800 font-semibold mb-2">Centered on behavior models.</h1>
-          <p class="tracking-wide leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam sem risus, quis cursus lorem interdum eu. Sed varius, turpis non luctus condimentum, est nunc aliquam est, eu bibendum arcu ex eget nibh. Etiam ut ipsum quis velit bibendum rutrum ac mattis lectus. Donec et porta urna. Nullam id nunc a ipsum efficitur gravida ac a dui. Maecenas ac condimentum lacus. Sed maximus velit elementum dolor suscipit varius. In commodo dolor libero, a suscipit purus efficitur in. Aliquam posuere iaculis risus, non congue metus semper ac. Nunc pulvinar, metus at mollis mattis, dui nulla viverra tortor, quis condimentum ex leo sed lectus. Nam eget nunc eget nibh sodales pretium. Phasellus placerat porta ornare.</p>
+        <div class="w-1/2 bg-gray-100 p-12 px-24 text-center">
+          <h1 class="text-3xl text-gray-800 font-semibold mb-3">Centered on behavior models.</h1>
+          <p class="tracking-wide text-xl leading-relaxed">
+            Putting the emphasis directly onto behavior models, BARK provides a wide range of behavior models.
+            New behavior models can be integrated easily &mdash; either using Python or C++.
+            Currently, a wide-range of behavior models is already available ranging from machine learning to conventional approaches.
+          </p>
         </div>
       </div>
       <div class="flex justify-center py-12">
-        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full ">
+        <a href="https://github.com/bark-simulator/bark" class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full ">
           Get Started &#xbb;
-        </button>
+        </a>
       </div>
-      <div class="flex mb-6">
-        <div class="w-1/3 bg-gray-400 h-64"></div>
-        <div class="w-1/3 bg-gray-500 h-64"></div>
-        <div class="w-1/3 bg-gray-400 h-64"></div>
+      <div class="flex justify-center mb-6">
+        <div class="w-2/3 bg-gray-100 rounded-lg py-4 px-6 border text-xl">
+          <div>{"@misc{bernhard2020bark,"}</div>
+          <div class="ml-6">{"title={BARK: Open Behavior Benchmarking in Multi-Agent Environments},"}</div>
+          <div class="ml-6">{"author={Julian Bernhard and Klemens Esterle and Patrick Hart and Tobias Kessler},"}</div>
+          <div class="ml-6">{"year={2020},"}</div>
+          <div class="ml-6">{"eprint={2003.02604},"}</div>
+          <div class="ml-6">{"archivePrefix={arXiv},"}</div>
+          <div class="ml-6">{"primaryClass={cs.MA}"}</div>
+          <div>{"}"}</div>
+        </div>
       </div>
   </Layout>
 )

@@ -14,9 +14,9 @@ const Header = ({ siteTitle }) => {
       }}
       class="flex items-center justify-center"
       >
-        <div class="flex items-center justify-between flex-wrap p-6 max-w-5xl" style={{minWidth: `100px`, maxWidth: `1800px`, width: `100%`}}>
+        <div class="flex items-center justify-between flex-wrap p-6 max-w-5xl" style={{minWidth: `100px`, maxWidth: `1640px`, width: `100%`}}>
           <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-normal text-xl tracking-tight">{siteTitle}</span>
+            <span class="font-semibold text-xl tracking-tight">{siteTitle}</span>
           </div>
           <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
