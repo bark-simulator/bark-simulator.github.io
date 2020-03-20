@@ -11,16 +11,16 @@ const AboutPage = () => (
     <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Core</h1>
     <div class="flex mb-12">
       <div class="w-1/4">
-        <RoundComponent title="Julian Bernhard" description="Founder/Developer" image="./noimage.png" />
+        <RoundComponent title="Julian Bernhard" description="Developer" image="./noimage.png" />
       </div>
       <div class="w-1/4">
-        <RoundComponent title="Klemens Esterle" description="Founder/Developer" image="./noimage.png" />
+        <RoundComponent title="Klemens Esterle" description="Developer" image="./noimage.png" />
       </div>
       <div class="w-1/4">
-        <RoundComponent title="Patrick Hart" description="Founder/Developer" image="./noimage.png" />
+        <RoundComponent title="Patrick Hart" description="Developer" image="./noimage.png" />
       </div>
       <div class="w-1/4">
-        <RoundComponent title="Tobias Kessler" description="Founder/Developer" image="./noimage.png" />
+        <RoundComponent title="Tobias Kessler" description="Developer" image="./noimage.png" />
       </div>
     </div>
     <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Students</h1>
