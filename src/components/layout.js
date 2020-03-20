@@ -28,8 +28,12 @@ const Layout = ({ children }) => {
   return (
     <body class="bg-gray-100 text-gray-900">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main class="px-6 my-4">{children}</main>
-      <Footer />
+      <div class="flex flex-wrap items-center justify-center">
+        <div class="px-6" style={{minWidth: `100px`, maxWidth: `2048px`, width: `100%`}}>
+          <main class="my-4">{children}</main>
+          <Footer />
+        </div>
+      </div>
     </body>
   )
 }
