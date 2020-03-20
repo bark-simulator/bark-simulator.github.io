@@ -10,7 +10,7 @@ const RoundComponent = ({ title, description, image }) => {
           {/* <img class="object-center w-32 h-32 rounded-full mr-4 bg-gray" src="https://www.fortiss.org/fileadmin/_processed_/6/8/csm_Holger_Pfeifer_771b1095b9.png" /> */}
           <div class="w-32 h-32 rounded-full bg-gray-300" ></div>
          </div>
-         <div class="w-full text-center mb-2 text-3xl text-gray-800">
+         <div class="w-full text-center text-3xl text-gray-800">
            {title}
          </div>
           <div class="w-full text-center text-gray-700 tracking-wide leading-relaxed">
