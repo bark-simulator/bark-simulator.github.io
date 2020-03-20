@@ -27,7 +27,7 @@ const Image = () => {
     }
   `)
 
-  return <Img objectPosition="50% 50%" fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
 export default Image
