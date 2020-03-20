@@ -14,9 +14,9 @@ const Header = ({ siteTitle }) => {
       }}
       class="flex items-center justify-center"
       >
-        <div class="flex items-center justify-between flex-wrap p-6 max-w-5xl" style={{minWidth: `100px`, maxWidth: `2048px`, width: `100%`}}>
+        <div class="flex items-center justify-between flex-wrap p-6 max-w-5xl" style={{minWidth: `100px`, maxWidth: `1800px`, width: `100%`}}>
           <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-semibold text-xl tracking-tight">{siteTitle}</span>
+            <span class="font-normal text-xl tracking-tight">{siteTitle}</span>
           </div>
           <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -25,14 +25,11 @@ const Header = ({ siteTitle }) => {
           </div>
           <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
-              <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
+              <Link to="/" activeClassName="block uppercase mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 uppercase">
                 Home
               </Link>
-              <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
+              <Link to="/about/" activeClassName="block uppercase mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4 uppercase">
                 About
-              </Link>
-              <Link to="/blog/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white">
-                Blog
               </Link>
             </div>
             <div>

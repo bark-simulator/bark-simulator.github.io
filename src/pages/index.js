@@ -17,7 +17,7 @@ const IndexPage = () => (
           <Image />        
         </div>
       </div>
-      <div class="flex mb-6 mt-8">
+      <div class="flex mt-8">
         <div class="w-1/2 bg-gray-500">
           <Image />       
         </div>
@@ -26,7 +26,12 @@ const IndexPage = () => (
           <p class="tracking-wide leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam sem risus, quis cursus lorem interdum eu. Sed varius, turpis non luctus condimentum, est nunc aliquam est, eu bibendum arcu ex eget nibh. Etiam ut ipsum quis velit bibendum rutrum ac mattis lectus. Donec et porta urna. Nullam id nunc a ipsum efficitur gravida ac a dui. Maecenas ac condimentum lacus. Sed maximus velit elementum dolor suscipit varius. In commodo dolor libero, a suscipit purus efficitur in. Aliquam posuere iaculis risus, non congue metus semper ac. Nunc pulvinar, metus at mollis mattis, dui nulla viverra tortor, quis condimentum ex leo sed lectus. Nam eget nunc eget nibh sodales pretium. Phasellus placerat porta ornare.</p>
         </div>
       </div>
-      <div class="flex mb-6 mt-8">
+      <div class="flex justify-center py-12">
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full ">
+          Get Started &#xbb;
+        </button>
+      </div>
+      <div class="flex mb-6">
         <div class="w-1/3 bg-gray-400 h-64"></div>
         <div class="w-1/3 bg-gray-500 h-64"></div>
         <div class="w-1/3 bg-gray-400 h-64"></div>
