@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `BARK`,
-    description: `Kick off the next generation of behavior model development.`,
+    description: `Kick off the next generation of behavior model development for autonomous driving.`,
     author: `@hart`,
   },
   plugins: [

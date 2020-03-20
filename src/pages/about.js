@@ -23,7 +23,7 @@ const AboutPage = () => (
         <RoundComponent title="Tobias Kessler" description="Developer" image="./noimage.png" />
       </div>
     </div>
-    <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Students</h1>
+    <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Contributors</h1>
     <div class="flex mb-6">
       <div class="w-1/5 bg-gray-400 h-64"></div>
       <div class="w-1/5 bg-gray-500 h-64"></div>
@@ -31,7 +31,7 @@ const AboutPage = () => (
       <div class="w-1/5 bg-gray-500 h-64"></div>
       <div class="w-1/5 bg-gray-400 h-64"></div>
     </div>
-    <div class="flex mb-12">
+    <div class="flex">
       <div class="w-1/5 bg-gray-400 h-64"></div>
       <div class="w-1/5 bg-gray-500 h-64"></div>
       <div class="w-1/5 bg-gray-400 h-64"></div>

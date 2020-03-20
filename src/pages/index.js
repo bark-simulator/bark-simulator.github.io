@@ -30,7 +30,7 @@ const IndexPage = () => (
           <p class="tracking-wide text-xl leading-relaxed">
             Putting the emphasis directly onto behavior models, BARK provides a wide range of behavior models.
             New behavior models can be integrated easily &mdash; either using Python or C++.
-            Currently, a wide-range of behavior models is already available ranging from machine learning to conventional approaches.
+            Currently, a wide range of behavior models is already available ranging from machine learning to conventional approaches.
           </p>
         </div>
       </div>
@@ -39,8 +39,8 @@ const IndexPage = () => (
           Get Started &#xbb;
         </a>
       </div>
-      <div class="flex justify-center mb-6">
-        <div class="w-2/3 bg-gray-100 rounded-lg py-4 px-6 border text-xl">
+      <div class="flex justify-center">
+        <div class="w-2/3 bg-gray-100 rounded-lg py-4 px-6 border text-xl text-gray-700">
           <div>{"@misc{bernhard2020bark,"}</div>
           <div class="ml-6">{"title={BARK: Open Behavior Benchmarking in Multi-Agent Environments},"}</div>
           <div class="ml-6">{"author={Julian Bernhard and Klemens Esterle and Patrick Hart and Tobias Kessler},"}</div>
