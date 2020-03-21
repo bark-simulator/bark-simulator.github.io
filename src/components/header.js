@@ -33,6 +33,7 @@ const Header = ({ siteTitle }) => {
               </Link>
             </div>
             <div>
+              <a href="https://github.com/bark-simulator/bark" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-800 hover:bg-white mt-4 lg:mt-0 mr-2">Documentation</a>
               <a href="https://github.com/bark-simulator/bark" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-800 hover:bg-white mt-4 lg:mt-0">Github</a>
             </div>
           </div>
