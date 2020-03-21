@@ -2,13 +2,18 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "../styles/site.css"
+import Img from "gatsby-image"
+
 
 const RoundComponent = ({ title, description, image }) => {
     return (
       <div class="flex flex-col p-6">
          <div class="flex w-full justify-center mb-3">
           {/* <img class="object-center w-32 h-32 rounded-full mr-4 bg-gray" src="https://www.fortiss.org/fileadmin/_processed_/6/8/csm_Holger_Pfeifer_771b1095b9.png" /> */}
-          <div class="w-32 h-32 rounded-full bg-gray-300" ></div>
+          <div class="object-center w-32 h-32 rounded-full bg-gray-400 overflow-hidden">
+            <Img objectFit="cover" fluid={image} />
+          </div>
+          {/* <div class="w-32 h-32 rounded-full bg-gray-300" ></div> */}
          </div>
          <div class="w-full text-center text-3xl text-gray-800">
            {title}
