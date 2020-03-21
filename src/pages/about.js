@@ -32,11 +32,11 @@ const AboutPage = () => (
       <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
     </div>
     <div class="flex flex-wrap">
-      <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
       <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
       <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
       <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
       <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
     </div>
   </Layout>
 )
