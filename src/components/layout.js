@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
     <body class="text-gray-900 antialiased">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div class="flex flex-wrap items-center justify-center">
-        <div class="px-6 mt-4" style={{minWidth: `100px`, maxWidth: `1640px`, width: `100%`}}>
+        <div class="md:px-6 mt-4" style={{minWidth: `100px`, maxWidth: `1640px`, width: `100%`}}>
           {children}
         </div>
       </div>

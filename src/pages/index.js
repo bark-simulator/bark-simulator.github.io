@@ -8,8 +8,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-      <div class="flex justify-center mt-4">
-        <div class="w-1/2 bg-gray-100 p-12 px-24 text-center">
+      <div class="flex flex-wrap md:justify-center mt-4">
+        <div class="w-full flex-wrap p-4 px-2 md:w-1/2 bg-gray-100 md:p-12 md:px-24 text-center">
           <h1 class="text-4xl text-gray-800 font-semibold mb-3">A semantic simulation framework.</h1>
           <p class="tracking-wide text-xl leading-relaxed">
             Develop the next generation of behavior models.
@@ -17,15 +17,15 @@ const IndexPage = () => (
             It offers a wide range of <i>state-of-the-art</i> behavior models for autonomous driving to get started with.
           </p>
         </div>
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2">
           <Image />        
         </div>
       </div>
-      <div class="flex mt-8">
-        <div class="w-1/2">
+      <div class="flex flex-wrap md:justify-center mt-8">
+        <div class="w-full md:w-1/2">
           <Image />       
         </div>
-        <div class="w-1/2 bg-gray-100 p-12 px-24 text-center">
+        <div class="w-full p-4 px-2 md:w-1/2 bg-gray-100 md:p-12 md:px-24 text-center">
           <h1 class="text-3xl text-gray-800 font-semibold mb-3">Centered on behavior models.</h1>
           <p class="tracking-wide text-xl leading-relaxed">
             Putting the emphasis directly onto behavior models, BARK provides a wide range of behavior models.
@@ -39,7 +39,7 @@ const IndexPage = () => (
           Get Started &#xbb;
         </a>
       </div>
-      <div class="flex justify-center">
+      <div class="justify-center hidden md:flex">
         <div class="w-2/3 bg-gray-100 rounded-lg py-4 px-6 border text-xl text-gray-700">
           <div>{"@misc{bernhard2020bark,"}</div>
           <div class="ml-6">{"title={BARK: Open Behavior Benchmarking in Multi-Agent Environments},"}</div>
