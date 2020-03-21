@@ -26,7 +26,7 @@ const IndexPage = () => (
           <Image />       
         </div>
         <div class="w-full p-4 px-2 md:w-1/2 bg-gray-100 md:p-12 md:px-24 text-center">
-          <h1 class="text-3xl text-gray-800 font-semibold mb-3">Centered on behavior models.</h1>
+          <h1 class="text-4xl text-gray-800 font-semibold mb-3">Centered on behavior models.</h1>
           <p class="tracking-wide text-xl leading-relaxed">
             Putting the emphasis directly onto behavior models, BARK provides a wide range of behavior models.
             New behavior models can be integrated easily &mdash; either using Python or C++.
