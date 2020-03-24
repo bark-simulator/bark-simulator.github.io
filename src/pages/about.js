@@ -14,16 +14,16 @@ const AboutPage = ({data}) => {
     <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Core</h1>
     <div class="flex flex-wrap sm:justify-center mb-12">
       <div class="w-full md:w-1/4">
-        <RoundComponent title="Julian Bernhard" description="Developer" image={data.bernhard.childImageSharp.fluid} />
+        <RoundComponent title="Julian Bernhard" description="Developer" image={data.bernhard.childImageSharp.fluid} linkedinUrl="https://www.linkedin.com/in/julian-bernhard-63b677173/" githubUrl="https://github.com/juloberno" />
       </div>
       <div class="w-full md:w-1/4">
-        <RoundComponent title="Klemens Esterle" description="Developer" image={data.esterle.childImageSharp.fluid} />
+        <RoundComponent title="Klemens Esterle" description="Developer" image={data.esterle.childImageSharp.fluid} linkedinUrl="https://www.linkedin.com/in/klemens-esterle/" githubUrl="https://github.com/klemense1" />
       </div>
       <div class="w-full md:w-1/4">
-        <RoundComponent title="Patrick Hart" description="Developer" image={data.hart.childImageSharp.fluid} />
+        <RoundComponent title="Patrick Hart" description="Developer" image={data.hart.childImageSharp.fluid} linkedinUrl="https://www.linkedin.com/in/patrick-hart-en/" githubUrl="https://github.com/patrickhart" />
       </div>
       <div class="w-full md:w-1/4">
-        <RoundComponent title="Tobias Kessler" description="Developer" image={data.kessler.childImageSharp.fluid} />
+        <RoundComponent title="Tobias Kessler" description="Developer" image={data.kessler.childImageSharp.fluid} linkedinUrl="https://www.linkedin.com/in/tobias-kessler-938369172/" githubUrl="https://github.com/tobiaskessler" />
       </div>
     </div>
     <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Contributors</h1>
