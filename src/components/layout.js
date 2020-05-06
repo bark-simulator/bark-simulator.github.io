@@ -9,9 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../styles/site.css"
+import Img from "gatsby-image"
 
 import Header from "./header"
 import Footer from "./footer"
+import BarkVideo from "../data/bark_video.mp4"
+import PosterImage from "../data/fff.png"
+import { Video } from 'gatsby-video'
 
 
 const Layout = ({ children }) => {
@@ -22,14 +26,24 @@ const Layout = ({ children }) => {
           title
         }
       }
+      placeholderImage: file(relativePath: { eq: "bark_logo.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1024) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
-
   return (
     <body class="text-gray-900 antialiased">
       <Header siteTitle={data.site.siteMetadata.title} />
       {/* <div class="flex">
-        <div class="w-full bg-gray-300" style={{height:`550px`}}>
+        <div class="w-full bg-gray-200" style={{height:`550px`, overflow: `hidden`}}>
+          <Img objectFit="cover-object" fluid={data.placeholderImage.childImageSharp.fluid} />
+          <video id="vid" class="object-cover bg-white" style={{height:`550px`, width:`100%`}} autoPlay muted loop>
+            <source src={BarkVideo} type="video/mp4" />
+          </video>
         </div>
       </div> */}
       <div class="flex flex-wrap items-center justify-center">

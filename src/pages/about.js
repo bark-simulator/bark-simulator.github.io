@@ -8,10 +8,9 @@ import SEO from "../components/seo"
 import RoundComponent from "../components/round_page"
 
 const AboutPage = ({data}) => {
-  console.log(data)
   return (<Layout>
     <SEO title="About" />
-    <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Core</h1>
+    <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Core Team</h1>
     <div class="flex flex-wrap sm:justify-center mb-12">
       <div class="w-full md:w-1/4">
         <RoundComponent title="Julian Bernhard" description="Developer" image={data.bernhard.childImageSharp.fluid} linkedinUrl="https://www.linkedin.com/in/julian-bernhard-63b677173/" githubUrl="https://github.com/juloberno" />
@@ -28,18 +27,18 @@ const AboutPage = ({data}) => {
     </div>
     <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Contributors</h1>
     <div class="flex flex-wrap md:mb-6">
-      <div class="w-full md:w-1/5 bg-gray-400 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
+      <div class="w-full md:w-1/5 bg-gray-100 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
     </div>
     <div class="flex flex-wrap">
-      <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-400 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-500 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
+      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
     </div>
   </Layout>)
 }
