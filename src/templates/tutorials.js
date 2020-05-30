@@ -23,8 +23,8 @@ export default function BlogPost({ data }) {
         <a href="#" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" classActive="font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">Training an Agent</a> */}
       </div>
       <div class="w-5/6 pl-12">
-        <h1 class="text-3xl text-gray-800">{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <h1 class="text-4xl text-gray-800">{post.frontmatter.title}</h1>
+            <div class="w-3/4" dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </div>
   </Layout>

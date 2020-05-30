@@ -46,7 +46,9 @@ module.exports = {
             resolve: `gatsby-remark-classes`,
             options: {
               classMap: {
-                "heading[depth=2]": "text-3xl text-gray-800 mt-16 mb-1",
+                "heading[depth=1]": "text-4xl text-gray-800 mt-12 mb-1",
+                "heading[depth=2]": "text-3xl text-gray-800 mt-8 mb-1",
+                "heading[depth=3]": "text-2xl text-gray-800 mt-2",
                 "image": "mt-2 mb-2",
                 "list[ordered=false]": "list-disc list-inside",
                 paragraph: "para",
@@ -62,7 +64,8 @@ module.exports = {
               maxWidth: 800,
             },
           },
-          `gatsby-remark-prismjs`
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`
         ],
       },
     },

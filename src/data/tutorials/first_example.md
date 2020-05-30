@@ -6,11 +6,7 @@ subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 In this example, we show the basic functionality of BARK using a merging scenario.
 It can be ran using: `bazel run //examples:merging`.
 
-```eval_rst
-.. image:: gifs/bark_merging.gif
-   :scale: 100 %
-   :align: left
-```
+![BARK Simulator](../images/merging.gif)
 
 BARK uses a `ParameterServer()` that stores all parameters of the simulation.
 We can set parameters globally:
