@@ -29,6 +29,61 @@ module.exports = {
         icon: `src/data/bark_logo_head.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                "heading[depth=2]": "text-3xl text-gray-800 mt-16 mb-1",
+                "image": "mt-2 mb-2",
+                "list[ordered=false]": "list-disc list-inside",
+                paragraph: "para",
+              }
+            }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 800,
+            },
+          },
+          `gatsby-remark-prismjs`
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-remark-prismjs`,
+      options: {
+        classPrefix: "language-",
+        inlineCodeMarker: null,
+        aliases: {},
+        showLineNumbers: false,
+        noInlineHighlight: false,
+        // Customize the prompt used in shell output
+        // Values below are default
+        prompt: {
+          user: "root",
+          host: "localhost",
+          global: false,
+        },
+        // escapeEntities: {},
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

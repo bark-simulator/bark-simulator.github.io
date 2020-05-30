@@ -42,6 +42,9 @@ const Header = ({ siteTitle }) => {
               <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
                 Simulation
               </Link>
+              <Link to="/tutorial/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
+                Tutorial
+              </Link>
               <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
                 About
               </Link>

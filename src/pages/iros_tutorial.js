@@ -17,64 +17,30 @@ const iros_tutorial = ({data}) => {
     }
     return data.allFile.edges[0].node;
   } 
-
+  console.log(data.allMarkdownRemark);
   return (<Layout>
     <SEO title="IROS 2020 - BARK Tutorial" />
     <div class="flex flex-wrap sm:justify-center">
-      <div class="w-3/4">
-        <h1 class="text-4xl text-center text-gray-800 mt-6">IROS 2020 &ndash; BARK Tutorial</h1>
-        <h1 class="text-xl mb-12 text-center text-gray-700 italic">Las Vegas, 25th of October</h1>
-        <h2 class="text-3xl text-gray-800 mt-16 mb-1">About the Tutorial</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, <b>no sea takimata</b> sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <h2 class="text-3xl text-gray-800 mt-12 mb-1">Program</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br /><br />
-          Speakers:<br />
-          <ul class="list-disc list-inside">
-            <li>uno</li>
-            <li>due</li>
-          </ul>
-        </p>
-        <h2 class="text-3xl text-gray-800 mt-12 mb-1">About BARK</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum.
-          Stet clita kasd gubergren, <b>no sea takimata</b> sanctus est Lorem ipsum dolor sit amet.
-        </p>
-        <div class="flex w-full justify-center">
-          <img class="object-cover w-1/2" src={BarkMerging} />    
-        </div>
+      <div class="w-full">
+        <h1 class="text-4xl text-center text-gray-800 mt-6">{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h1>
+        <h1 class="text-xl mb-12 text-center text-gray-700 italic">{data.allMarkdownRemark.edges[0].node.frontmatter.subtitle}</h1>
+        <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }}></div>
         <h2 class="text-3xl text-gray-800 mt-10">Organizers</h2>
         <div class="flex flex-wrap sm:justify-center mb-12">
           <div class="w-full md:w-1/3">
-            <RoundComponent title="Prof. Alois Knoll" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "knoll").childImageSharp.fluid} />
+            <RoundComponent title="Prof. Alois Knoll" description={data.allMarkdownRemark.edges[0].node.frontmatter.knoll} image={GetNode(data, "knoll").childImageSharp.fluid} />
           </div>
           <div class="w-full md:w-1/3">
-            <RoundComponent title="Julian Bernhard" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "bernhard").childImageSharp.fluid}  />
+            <RoundComponent title="Julian Bernhard" description={data.allMarkdownRemark.edges[0].node.frontmatter.bernhard} image={GetNode(data, "bernhard").childImageSharp.fluid}  />
           </div>
           <div class="w-full md:w-1/3">
-            <RoundComponent title="Klemens Esterle" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "esterle").childImageSharp.fluid} />
+            <RoundComponent title="Klemens Esterle" description={data.allMarkdownRemark.edges[0].node.frontmatter.esterle} image={GetNode(data, "esterle").childImageSharp.fluid} />
           </div>
           <div class="w-full md:w-1/3">
-            <RoundComponent title="Patrick Hart" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "hart").childImageSharp.fluid} />
+            <RoundComponent title="Patrick Hart" description={data.allMarkdownRemark.edges[0].node.frontmatter.hart} image={GetNode(data, "hart").childImageSharp.fluid} />
           </div>
           <div class="w-full md:w-1/3">
-            <RoundComponent title="Tobias Kessler" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "kessler").childImageSharp.fluid} />
+            <RoundComponent title="Tobias Kessler" description={data.allMarkdownRemark.edges[0].node.frontmatter.kessler} image={GetNode(data, "kessler").childImageSharp.fluid} />
           </div>
 
         </div>
@@ -97,6 +63,26 @@ export const query = graphql`
             fluid {
               ...GatsbyImageSharpFluid
             }
+          }
+        }
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          headings {
+            depth
+            value
+          }
+          frontmatter {
+            title
+            knoll
+            hart
+            kessler
+            esterle
+            bernhard
+            subtitle
           }
         }
       }
