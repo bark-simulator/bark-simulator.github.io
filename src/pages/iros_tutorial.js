@@ -22,7 +22,7 @@ const iros_tutorial = ({data}) => {
     <SEO title="IROS 2020 - BARK Tutorial" />
     <div class="flex flex-wrap sm:justify-center">
       <div class="w-3/4">
-        <h1 class="text-4xl text-center text-gray-800 mt-6">IROS 2020 - BARK Tutorial</h1>
+        <h1 class="text-4xl text-center text-gray-800 mt-6">IROS 2020 &ndash; BARK Tutorial</h1>
         <h1 class="text-xl mb-12 text-center text-gray-700 italic">Las Vegas, 25th of October</h1>
         <h2 class="text-3xl text-gray-800 mt-16 mb-1">About the Tutorial</h2>
         <p>
