@@ -39,17 +39,20 @@ const Header = ({ siteTitle }) => {
           </div>
           <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
-              <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-4" class="block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-4">
+              <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-4" class="transition duration-200 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-4">
                 Simulation
               </Link>
-              <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-4" class="block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-4">
+              <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-4" class="transition duration-200 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-4">
                 About
+              </Link>
+              <Link to="/iros_tutorial/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-4" class="transition duration-200 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-4">
+                IROS 2020
               </Link>
             </div>
             <div>
-              <a href="https://arxiv.org/abs/2003.02604" class="inline-block text-base px-4 py-2 leading-none border rounded text-blue border-blue hover:border-blue-500 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0 mr-2">@arXiv</a>
-              <a href="https://bark-simulator.readthedocs.io/en/latest/" class="inline-block text-base px-4 py-2 leading-none border rounded text-blue border-blue hover:border-blue-500 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0 mr-2">Documentation</a>
-              <a href="https://github.com/bark-simulator/bark" class="inline-block text-base px-4 py-2 leading-none border rounded text-blue border-blue hover:border-blue-500 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">Github</a>
+              <a href="https://arxiv.org/abs/2003.02604" class="transition duration-200 ease-in-out inline-block text-base px-4 py-2 leading-none border rounded text-blue border-blue hover:border-blue-500 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0 mr-2">@arXiv</a>
+              <a href="https://bark-simulator.readthedocs.io/en/latest/" class="transition duration-200 ease-in-out inline-block text-base px-4 py-2 leading-none border rounded text-blue border-blue hover:border-blue-500 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0 mr-2">Documentation</a>
+              <a href="https://github.com/bark-simulator/bark" class="transition duration-200 ease-in-out inline-block text-base px-4 py-2 leading-none border rounded text-blue border-blue hover:border-blue-500 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">Github</a>
             </div>
           </div>
         </div>

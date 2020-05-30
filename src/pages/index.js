@@ -35,7 +35,7 @@ const IndexPage = ({data}) => {
             Currently, a wide range of behavior models is already available ranging from machine learning to conventional approaches.
           </p>
           <div class="flex justify-left py-2">
-          <a href="https://github.com/bark-simulator/bark" class="border text-blue hover:border-blue-500 border-blue hover:text-blue-500 font-semibold py-2 px-3 rounded-lg ">
+          <a href="https://github.com/bark-simulator/bark" class="transition duration-200 ease-in-out border text-blue hover:border-blue-500 border-blue hover:text-blue-500 font-semibold py-2 px-3 rounded-lg ">
             Get Started &#xbb;
           </a>
           </div>
