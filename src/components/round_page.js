@@ -10,7 +10,9 @@ const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl }) =
       <div class="flex flex-col p-6">
          <div class="flex w-full justify-center mb-3">
           <div class="object-center w-32 h-32 rounded-full bg-gray-400 overflow-hidden">
+            {image != "" &&
             <Img objectFit="cover" fluid={image} />
+            }
           </div>
          </div>
          <div class="w-full text-center text-3xl text-gray-800">
@@ -20,9 +22,11 @@ const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl }) =
            {description}
          </div>
          <div class="flex-wrap text-center mt-2">
-          <a href={linkedinUrl}>
-            <IoLogoLinkedin class="inline-block w-8 h-8 text-gray-500 hover:text-blue-900 " />
-          </a>
+          {linkedinUrl != "" &&
+            <a href={linkedinUrl}>
+              <IoLogoLinkedin class="inline-block w-8 h-8 text-gray-500 hover:text-blue-900 " />
+            </a>
+          }
           <a href={githubUrl}>
             <IoLogoGithub class="inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
           </a>

@@ -27,18 +27,13 @@ const AboutPage = ({data}) => {
     </div>
     <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Contributors</h1>
     <div class="flex flex-wrap md:mb-6">
-      <div class="w-full md:w-1/5 bg-gray-100 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
-    </div>
-    <div class="flex flex-wrap">
-      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-100 h-64"></div>
-      <div class="w-full md:w-1/5  bg-gray-200 h-64"></div>
+      <div class="w-full md:w-1/5 bg-gray-100" style={{height:`300px`}}>
+        <RoundComponent title="Luis Gressenbuch" description="Developer" image={data.luis_gressenbuch.childImageSharp.fluid} linkedinUrl="" githubUrl="https://github.com/cirrostratus1" />
+      </div>
+      <div class="w-full md:w-1/5  bg-gray-200" style={{height:`300px`}}></div>
+      <div class="w-full md:w-1/5  bg-gray-100" style={{height:`300px`}}></div>
+      <div class="w-full md:w-1/5  bg-gray-200" style={{height:`300px`}}></div>
+      <div class="w-full md:w-1/5  bg-gray-100" style={{height:`300px`}}></div>
     </div>
   </Layout>)
 }
@@ -70,6 +65,14 @@ export const query = graphql`
       }
     }
     kessler: file(relativePath: { eq: "kessler.jpeg" }) {
+      id,
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    luis_gressenbuch: file(relativePath: { eq: "luis_gressenbuch.png" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
