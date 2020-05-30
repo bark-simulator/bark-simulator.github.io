@@ -35,8 +35,8 @@ const IndexPage = ({data}) => {
             BARK provides a benchmark suite that tracks the performance of behavior models &mdash; also during development.
             Unlike many simulation frameworks, BARK offers benchmarking using fully interactive behaviors.
           </p>
-          <div class="flex justify-left py-2">
-          <a href="https://github.com/bark-simulator/bark" class="transition duration-500 ease-in-out border text-blue hover:border-blue-500 border-blue hover:text-blue-500 font-semibold py-2 px-3 rounded-lg ">
+          <div class="flex justify-left py-2 mt-6">
+          <a href="https://github.com/bark-simulator/bark" class="shadow-2xl transition duration-500 ease-in-out border text-blue hover:shadow-lg font-semibold py-4 px-6 rounded-lg ">
             Get Started &#xbb;
           </a>
           </div>
