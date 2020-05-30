@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import BarkMerging from "../data/merging.gif"
+import BarkMerging from "../data/images/merging.gif"
 import SEO from "../components/seo"
 
 const IndexPage = ({data}) => {
@@ -46,7 +46,7 @@ const IndexPage = ({data}) => {
 }
 export const query = graphql`
   query IndexPageQuery {
-    barkScreenshot: file(relativePath: { eq: "bark_screenshot.png" }) {
+    barkScreenshot: file(relativePath: { eq: "images/bark_screenshot.png" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
@@ -54,7 +54,7 @@ export const query = graphql`
         }
       }
     }
-    barkEval: file(relativePath: { eq: "bark_logo.jpg" }) {
+    barkEval: file(relativePath: { eq: "images/bark_logo.jpg" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {

@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/data/bark_logo_head.png`, // This path is relative to the root of the site.
+        icon: `src/data/images/bark_logo_head.png`, // This path is relative to the root of the site.
       },
     },
     {

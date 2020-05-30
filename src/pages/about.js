@@ -42,7 +42,7 @@ const AboutPage = ({data}) => {
 
 export const query = graphql`
   query HomePageQuery {
-    hart: file(relativePath: { eq: "hart.jpg" }) {
+    hart: file(relativePath: { eq: "images/hart.jpg" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
@@ -50,7 +50,7 @@ export const query = graphql`
         }
       }
     }
-    esterle: file(relativePath: { eq: "esterle.jpeg" }) {
+    esterle: file(relativePath: { eq: "images/esterle.jpeg" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
@@ -58,7 +58,7 @@ export const query = graphql`
         }
       }
     }
-    bernhard: file(relativePath: { eq: "bernhard.jpeg" }) {
+    bernhard: file(relativePath: { eq: "images/bernhard.jpeg" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
@@ -66,7 +66,7 @@ export const query = graphql`
         }
       }
     }
-    kessler: file(relativePath: { eq: "kessler.jpeg" }) {
+    kessler: file(relativePath: { eq: "images/kessler.jpeg" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
@@ -74,7 +74,7 @@ export const query = graphql`
         }
       }
     }
-    luis_gressenbuch: file(relativePath: { eq: "luis_gressenbuch.png" }) {
+    luis_gressenbuch: file(relativePath: { eq: "images/luis_gressenbuch.png" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
