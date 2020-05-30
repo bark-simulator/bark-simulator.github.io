@@ -62,7 +62,7 @@ const iros_tutorial = ({data}) => {
         <h2 class="text-3xl text-gray-800 mt-10">Organizers</h2>
         <div class="flex flex-wrap sm:justify-center mb-12">
           <div class="w-full md:w-1/3">
-            <RoundComponent title="Alois Knoll" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "knoll").childImageSharp.fluid} />
+            <RoundComponent title="Prof. Alois Knoll" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "knoll").childImageSharp.fluid} />
           </div>
           <div class="w-full md:w-1/3">
             <RoundComponent title="Julian Bernhard" description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." image={GetNode(data, "bernhard").childImageSharp.fluid}  />

@@ -24,12 +24,12 @@ const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl }) =
          <div class="flex-wrap text-center mt-2">
           {linkedinUrl != "" &&
             <a href={linkedinUrl}>
-              <IoLogoLinkedin class="inline-block w-8 h-8 text-gray-500 hover:text-blue-900 " />
+              <IoLogoLinkedin class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-blue-900 " />
             </a>
           }
           {githubUrl != "" &&
           <a href={githubUrl}>
-            <IoLogoGithub class="inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
+            <IoLogoGithub class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
           </a>
           }
          </div>
