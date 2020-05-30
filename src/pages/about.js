@@ -25,15 +25,17 @@ const AboutPage = ({data}) => {
         <RoundComponent title="Tobias Kessler" description="Developer" image={data.kessler.childImageSharp.fluid} linkedinUrl="https://www.linkedin.com/in/tobias-kessler-938369172/" githubUrl="https://github.com/tobiaskessler" />
       </div>
     </div>
-    <h1 class="text-4xl mb-4 text-center text-gray-800 mt-6">Contributors</h1>
-    <div class="flex flex-wrap md:mb-6">
-      <div class="w-full md:w-1/5 bg-gray-100" style={{height:`300px`}}>
+    <h1 class="text-4xl mb-4 text-center text-gray-800 mt-24">Contributors</h1>
+    <div class="flex flex-wrap md:mb-6 justify-center">
+      <div class="w-full md:w-1/4">
         <RoundComponent title="Luis Gressenbuch" description="Developer" image={data.luis_gressenbuch.childImageSharp.fluid} linkedinUrl="" githubUrl="https://github.com/cirrostratus1" />
       </div>
-      <div class="w-full md:w-1/5  bg-gray-200" style={{height:`300px`}}></div>
-      <div class="w-full md:w-1/5  bg-gray-100" style={{height:`300px`}}></div>
-      <div class="w-full md:w-1/5  bg-gray-200" style={{height:`300px`}}></div>
-      <div class="w-full md:w-1/5  bg-gray-100" style={{height:`300px`}}></div>
+      <div class="w-full md:w-1/4">
+        <RoundComponent title="Mansoor Nasir Cheema" description="Developer" image="" linkedinUrl="" githubUrl="https://github.com/mansoorcheema" />
+      </div>
+      <div class="w-full md:w-1/4">
+        <RoundComponent title="tin1254" description="Developer" image="" linkedinUrl="" githubUrl="https://github.com/tin1254" />
+      </div>
     </div>
   </Layout>)
 }

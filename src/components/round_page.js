@@ -27,9 +27,11 @@ const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl }) =
               <IoLogoLinkedin class="inline-block w-8 h-8 text-gray-500 hover:text-blue-900 " />
             </a>
           }
+          {githubUrl != "" &&
           <a href={githubUrl}>
             <IoLogoGithub class="inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
           </a>
+          }
          </div>
       </div>
     )
