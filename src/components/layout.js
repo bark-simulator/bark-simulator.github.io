@@ -13,7 +13,6 @@ import Img from "gatsby-image"
 
 import Header from "./header"
 import Footer from "./footer"
-import BarkVideo from "../data/bark_video.mp4"
 import PosterImage from "../data/fff.png"
 import { Video } from 'gatsby-video'
 
