@@ -5,6 +5,6 @@
 4. Build and upload the website to Github: `npm run deploy`.
 
 # ToDo
-- automatic layour injection
+- automatic layer injection
 - data from md and json
 - tailwind layout
