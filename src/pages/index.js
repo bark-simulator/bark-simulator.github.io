@@ -38,7 +38,7 @@ const IndexPage = ({data}) => {
             Each vehicle reacts to the benchmark vehicle using its defined behavior model.
           </p>
           <div class="flex justify-left py-2">
-          <a href="https://github.com/bark-simulator/bark" class="transition duration-200 ease-in-out border text-blue hover:border-blue-500 border-blue hover:text-blue-500 font-semibold py-2 px-3 rounded-lg ">
+          <a href="https://github.com/bark-simulator/bark" class="transition duration-500 ease-in-out border text-blue hover:border-blue-500 border-blue hover:text-blue-500 font-semibold py-2 px-3 rounded-lg ">
             Get Started &#xbb;
           </a>
           </div>
