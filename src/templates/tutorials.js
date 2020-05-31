@@ -20,8 +20,8 @@ export default function BlogPost({ data }) {
         <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Advanced Topics</a>
         <p class="mb-2 text-gray-500 uppercase tracking-wide font-bold text-sm mt-8">BARK-ML</p>
         <Link to="/tutorials/bark_ml_getting_started/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">Getting Started</Link>
-        <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Observers</a>
-        <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Evaluators</a>
+        <Link to="/tutorials/bark_ml_observers/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">Observers</Link>
+        <Link to="/tutorials/bark_ml_evaluators/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">Evaluators</Link>
         <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Environments</a>
         <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Training an BARK Agent</a>
       </div>

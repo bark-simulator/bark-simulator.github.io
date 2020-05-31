@@ -5,7 +5,7 @@ subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 
 BARK machine learning (BARK-ML) extends the BARK framework for artificial intelligence applications.
 It offers training environments as well as sophisticated agents that can master complex traffic scenarios, e.g. by using reinforcement learning.
-To use BARK-ML, you need to have the same [prerequisites](/tutorials/) as when using BARK.
+To use BARK-ML, you need to have the same [prerequisites](/tutorials/) satisfied as when using BARK.
 
 ## Installing BARK-ML
 Similar to BARK, run these steps:
