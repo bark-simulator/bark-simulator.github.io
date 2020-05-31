@@ -3,7 +3,8 @@ title: "Getting Started"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-BARK machine learning (BARK-ML) provides environments for training reinforcement learning agents or imitation learning algorithms.
+BARK machine learning (BARK-ML) extends the BARK framework for artificial intelligence applications.
+It offers training environments as well as sophisticated agents that can master complex traffic scenarios, e.g. by using reinforcement learning.
 To use BARK-ML, you need to have the same [prerequisites](/tutorials/) as when using BARK.
 
 ## Installing BARK-ML
@@ -16,8 +17,8 @@ Similar to BARK, run these steps:
 
 ## Modules
 The core modules of BARK-ML are:
-* Environments:
-* Behaviors:
-* Observers:
-* Evaluators:
-* Library Wrappers:
+* <b>Behaviors</b>: Behavior models trained with e.g. reinforcement learning.
+* <b>Environments</b>: Environments based on blueprints.
+* <b>Observers</b>: Module that converts the BARK world into a observation, e.g. a vectorial representation.
+* <b>Evaluators</b>: Module evaluating the BARK world, determining the reward signal and whether an episode is terminal.
+* <b>Library Wrappers</b>: Integration of several machine learning libraries, such as [TF-Agents](https://github.com/tensorflow/agents).
