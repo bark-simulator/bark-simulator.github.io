@@ -15,12 +15,12 @@ The <b>core modules</b> of BARK are:
 </br>
 </br>
 We only elaborate each of the above components slightly.
-For deeper insights, we refer to our [documentation](https://bark-simulator.readthedocs.io/en/latest/).
+For deeper insights and a comprehensive overview of the components, we refer to our [documentation](https://bark-simulator.readthedocs.io/en/latest/).
 
 
 ## World and Observed World
 
-The `World` class contains all objects, maps, and utilities for the simulation in BARK.
+The `World` class contains all objects, maps, and utilities of the simulation in BARK.
 <br />
 <br />
 A shortened implementation of the `World` class:
@@ -48,14 +48,14 @@ class World : public commons::BaseType {
 };
 ```
 
-The most important class members are the agent map `agents_`, static objects `objects_`, and the `map_`.
+The most important class members are the agent map `agents_`, static objects `objects_`, and the map interface `map_`.
 The `Step` function calls the `DoPlanning` and then the `DoExecution` function.
-Each agent plans in the `DoPlanning` phase using the `ObservedWorld` &ndash; a derived world.
+Each agent plans in the `DoPlanning` phase using an `ObservedWorld` &ndash; an agent-specific derived world.
 The `Observe` function creates agent-specific observed worlds.
 After planning has finished, the `DoExecution` then executes the planned behaviors (trajectories).
 <br />
 <br />
-The `ObservedWorld` stores an `AgentId` for which it also provides additional interfaces and utilities.
+The `ObservedWorld` additionally stores an `AgentId` for which it also provides extra interfaces and utilities.
 Furthermore, during the derivation, effects, such as occlusions can be modeled.
 <br />
 <br />

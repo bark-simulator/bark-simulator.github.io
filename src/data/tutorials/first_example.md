@@ -48,6 +48,20 @@ In the merging example, we place vehicles on both lanes with the ego (controlled
 To configure the left and right lane of the merging scenario, we can use the following code:
 
 ```python
+# scenario
+class CustomLaneCorridorConfig(LaneCorridorConfig):
+  def __init__(self,
+               params=None,
+               **kwargs):
+    super(CustomLaneCorridorConfig, self).__init__(params, **kwargs)
+  
+  def goal(self, world):
+    road_corr = world.map.GetRoadCorridor(
+      self._road_ids, XodrDrivingDirection.forward)
+    lane_corr = self._road_corridor.lane_corridors[0]
+    # defines goal polygon on the left lane
+    return GoalDefinitionPolygon(lane_corr.polygon)
+
 # configure both lanes
 left_lane = CustomLaneCorridorConfig(params=param_server,
                                      lane_corridor_id=0,
@@ -87,6 +101,12 @@ env = Runtime(step_time=0.2,
               viewer=viewer,
               scenario_generator=scenarios,
               render=True)
+sim_step_time = param_server["simulation"]["step_time",
+                                           "Step-time used in simulation",
+                                           0.2]
+sim_real_time_factor = param_server["simulation"]["real_time_factor",
+                                                  "execution in real-time or faster",
+                                                  1.]
 ```
 
 The scenarios in BARK can be run as simple as:

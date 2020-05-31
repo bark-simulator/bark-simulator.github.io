@@ -13,7 +13,7 @@ Before you start using BARK, you'll need to familiarize yourself with and instal
 
 
 ## Installing BARK
-In this section, we explain how to clone BARK to running the first example in BARK.
+In this section, we explain how to clone BARK up to running the first example in BARK.
 <br />
 <br />
 To get BARK running, follow these steps:
