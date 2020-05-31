@@ -20,7 +20,7 @@ const iros_tutorial = ({data}) => {
   return (<Layout>
     <SEO title="IROS 2020 - BARK Tutorial" />
     <div class="flex flex-wrap sm:justify-center">
-      <div class="w-full">
+      <div class="w-full lg:w-3/4">
         <h1 class="text-4xl text-center text-gray-800 mt-6">{data.markdownRemark.frontmatter.title}</h1>
         <h1 class="text-xl mb-12 text-center text-gray-700 italic">{data.markdownRemark.frontmatter.subtitle}</h1>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
