@@ -1,35 +1,39 @@
 ---
-title: "Installation"
+title: "Getting Started"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
+Before you start using BARK, you'll need to farmiliarize yourself with and install some core technologies. <br /><br />
+<b>Prerequisites</b> before you start developing:
 
-## Prerequisites
-
-* Bazel > 3(requires Java)
-* Python3.7 (`sudo apt-get install python3.7 python3.7-dev python3.7-tk`)
-* Virtual Env (`pip3 install virtualenv==16.7.8`) (note that the newest version does not seem to link the Python.h)
-* gcc7 (needs to be set as the default compiler)
-* Visual Studio Code
+* [Bazel.build](https://bazel.build/): Build tool used in BARK:
+* [Python3.7-dev](https://www.python.org/downloads/) and the package `python3.7-tk`.
+* Virtual Python environment: `pip install virtualenv==16.7.8`
+* [GCC7](https://gcc.gnu.org/gcc-7/): C++ compiler for BARK
+* We recommend using [Visual Studio Code](https://code.visualstudio.com/) for development
 
 
 ## Installing BARK
-
-1. Use `git clone https://github.com/bark-simulator/bark.git` or download the repository from this page.
-2. Run `bash install.sh`: creates a virtual environment (located in python/venv) and installs all python packages
-2. Run `source dev_into.sh`: activates the virtual environment (make sure to run this before bazel)
-3. Use `bazel test //...` to validate that BARK is working.
-4. Finally, try one of the examples provided in BARK by running `bazel run //examples:merging`.
+In this section, we explain how to clone BARK all the way to running the first example in BARK.
+<br />
+<br />
+To get BARK running, follow these steps:
+1. Clone the BARK repository and enter the folder by running `git clone https://github.com/bark-simulator/bark.git && cd bark`.
+2. Create a virtual Python environment and install all packages by running `bash install.sh`.
+3. After the virtual Python environment has been created, activate it by running `source dev_into.sh`.
+4. To make sure BARK is working run all tests using `bazel test //...` (make sure the virtual Python environment is actiavted).
+5. Now, you are ready to go! Try out one of the provided examples by running `bazel run //examples:merging`.
 
 
 ## Installing Python on macOS
+On macOS, we recommend the following Python setup:
 
-1. Install pyenv: `brew install pyenv`.
-2. Install a newer version of tcl-tk: `brew upgrade tcl-tk`.
-3. Run `pyenv install python3.7-dev`. If you run into trouble with TKInter have a look [here](https://stackoverflow.com/questions/60469202/unable-to-install-tkinter-with-pyenv-pythons-on-macos).
+1. BARK requires the latest version of tcl-tk (`brew upgrade tcl-tk`).
+2. To isolate the Python version from the macOS sytem we recomend using pyenv: `brew install pyenv`.
+3. Intall Python3.7-dev by running: `pyenv install 3.7-dev`. If you run into trouble with TKInter have a look [here](https://stackoverflow.com/questions/60469202/unable-to-install-tkinter-with-pyenv-pythons-on-macos).
 4. Set this as your global Python version: `pyenv global 3.7-dev`.
-5. Also add this Python version to your `~/.zshrc` by adding `eval "$(pyenv init -)"`.
-6. Install an older version of the virtualenv package by running: `pip install virtualenv==16.7.8`
-7. In order to set TKAgg as backend have a look [here](https://stackoverflow.com/questions/21784641/installation-issue-with-matplotlib-python).
+5. Add pyenv initialization to your shell, e.g. `~/.zshrc` and add `eval "$(pyenv init -)"`.
+6. Install the virtual environment package: `pip install virtualenv==16.7.8`
+7. If you run into trouble with the Matplotlib TKAgg backend have a look [here](https://stackoverflow.com/questions/21784641/installation-issue-with-matplotlib-python).
 
 
 
@@ -37,5 +41,3 @@ subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 
 ### Python.h not found
 Make sure that there is a 'Python.h' file in the `python/venv` folder.
-
-### Feel free to add your questions here or asks us directly by submitting an issue!

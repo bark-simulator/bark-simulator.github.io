@@ -39,13 +39,13 @@ const Header = ({ siteTitle }) => {
           </div>
           <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
-              <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
+              <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-600 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
                 Simulation
               </Link>
-              <Link to="/tutorials/" partiallyActive={true} activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
+              <Link to="/tutorials/" partiallyActive={true} activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-600 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
                 Tutorials
               </Link>
-              <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
+              <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-600 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
                 About
               </Link>
               {/* <Link to="/iros_tutorial/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">

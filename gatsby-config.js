@@ -47,10 +47,12 @@ module.exports = {
             options: {
               classMap: {
                 "heading[depth=1]": "text-4xl text-gray-800 mt-12 mb-1",
-                "heading[depth=2]": "text-3xl text-gray-800 mt-8 mb-1",
+                "heading[depth=2]": "text-3xl text-gray-800 mt-10",
                 "heading[depth=3]": "text-2xl text-gray-800 mt-2",
                 "image": "mt-2 mb-2",
+                "a": "text-blue-700",
                 "list[ordered=false]": "list-disc list-inside",
+                "list[ordered=true]": "list-decimal list-inside",
                 paragraph: "para",
               }
             }
