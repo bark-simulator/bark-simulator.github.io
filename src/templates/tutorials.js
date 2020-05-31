@@ -13,7 +13,7 @@ export default function BlogPost({ data }) {
       <div class="w-full md:w-1/6">
         <p class="mb-2 text-gray-500 uppercase tracking-wide font-bold text-sm">BARK</p>
         <Link to="/tutorials/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">Getting Started</Link>
-        <Link to="/tutorials/building_blocks/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">Building Blocks</Link>
+        {/* <Link to="/tutorials/building_blocks/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">Building Blocks</Link> */}
         <Link to="/tutorials/first_example/" partiallyActive={true} class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0 bg-blue-200 text-blue-600">First Example</Link>
         <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Benchmarking</a>
         <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Advanced Topics</a>
