@@ -3,7 +3,7 @@ title: "Developing Behavior Models"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-Now, to the fun part! In this section, we will develop your first BARK behavior model.
+Now, to the fun part! In this section, we will develop our first BARK behavior model.
 <br />
 <br />
 
