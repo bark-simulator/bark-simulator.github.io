@@ -3,7 +3,7 @@ title: "First Example"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-Before diving deeper into the building blocks of BARK, let us first run a simple example.
+Before diving deeper into the [building blocks](/tutorials/building_blocks/) of BARK, let us first run a simple example.
 <br />
 An example provided in BARK can be run, e.g. the merging scenario using `bazel run //examples:merging`:
 
