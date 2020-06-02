@@ -48,12 +48,13 @@ Relevant links to give an impression on the background on which this tutorial is
 
 
 ## News:
+(Last update June 5th)
 
-June 5th 2020: Tutorial website available
+- June 5th 2020: Tutorial website available
 
 
 ## Program
-The tutorial will consist of a mix slide presentations and interactive sessions. Short spot light talks will provide hands-on experience from industry researchers.
+The tutorial mixes slide presentations and interactive sessions. Short spot light talks will provide hands-on experience from industry researchers.
 ### Time Plan
 | Time        | Talk           | Comment  |
 | ------------- |:-------------:| -----:|
