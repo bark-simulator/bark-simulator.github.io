@@ -61,6 +61,10 @@ June 5th 2020: Website available
 | 13:00      | End |   |
 ## About BARK
 
-Predicting and planning interactive behaviors in complex traffic situations presents a challenging task. Especially in scenarios involving multiple traffic participants that interact densely, autonomous vehicles still struggle to interpret situations and to eventually achieve their own driving goal. BARK is a semantic simulation framework for autonomous agents with a special focus on autonomous driving. Its behavior model-centric design allows for the rapid development, training and benchmarking of various decision-making algorithms. In BARK, behavior models are (re-)used for planning, prediction, and simulation. A range of models is currently available, such as Monte-Carlo Tree Search and Reinforcement Learning-based behavior models. 
+Predicting and planning interactive behaviors in complex traffic situations presents a challenging task. Especially in scenarios involving multiple traffic participants that interact densely, autonomous vehicles still struggle to interpret situations and to eventually achieve their own driving goal. BARK is a semantic simulation framework for autonomous agents with a special focus on autonomous driving. Its behavior model-centric design allows for the rapid development, training and benchmarking of various decision-making algorithms.
+
+In BARK, behavior models are (re-)used for planning, prediction, and simulation. A range of models is currently available, ranging from simplistic car-following to rule-based intersection crossing models and models derived from the planning community such as Monte-Carlo Tree Search and Reinforcement Learning-based behavior models.
+ 
+In addition to that BARK provides an easy to use benchmarking process to compare various behavior models based on using BARK's data-based or sampling-based scenario generation. BARK supports replay of the [Interaction Dataset]() with the possibility to (partially) exchange recorded behavior with interactive models. Coverage-based sampling criteria are supported not only over physical scenario properties such as velocity and vehicle distance ranges, but also over hidden behavior model parameters.
 
 ![BARK Simulator](./images/bark_screenshot.png)
