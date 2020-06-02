@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{vx99:function(e,t,l){"use strict";l.r(t);var n=l("q1tI"),a=l.n(n),c=(l("Wbzz"),l("Bl7J")),i=l("vrFN");t.default=function(){return a.a.createElement(c.a,null,a.a.createElement(i.a,{title:"Blog"}),a.a.createElement("div",null,a.a.createElement("h1",{class:"text-2xl"},"Welcome to BARK"),a.a.createElement("p",null,"This is our first blog post in which we will introduce BARK.")))}}}]);
-//# sourceMappingURL=component---src-pages-blog-js-1fbabc41f7a834560d39.js.map
