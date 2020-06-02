@@ -15,31 +15,37 @@ BARK is an open-source benchmarking platform to foster comparison of
 approaches developed in the field of interactive decision making for self-driving vehicles. BARK offers a unique approach with behavior models being used exchangeably for prediction, planning and simulation. To
 grow the community around a common benchmarking platform, we want to enable
 participants to employ the platform within research and industry projects.
-
-
-Attendees of the tutorial will
+<br />
+<br />
+<b>Attendees of the tutorial will:</b>
 - Understand principles of state-of-the-art approaches in interactive behavior planning (POMDP planning, Multi-Agent planning)
 - Understand pros and cons of state-of-the-art approaches
 - Understand requirements on benchmarking platforms to systematically develop interactive behavior planners
 - Gain hands-on-experience with BARK as benchmarking platform for interactive planners
 - Implement and benchmark their own interactive-behavior planner
+<br />
+<br />
 
- 
-### Topics of interest:
+<b>Topics of interest:</b>
 - Behavior Benchmarking
 - Autonomous Driving
 - Multi-Agent Systems
 - Interactive Planning
- 
-### Intended audience:
-- PhD studens (in robotics, in software engineering) who want to practically learn about cutting edge benchmarking approaches for interactive decision making algorithms. This tutorial provides a good entry point to understand the state-of-the-art in this field. It gives them an understanding of the current challenges and upcoming future research directions. By gaining hands-on-experience with problems in interactive decision making, new researches are encouraged to directly tackle the open problems in this field.
-- Experienced robotics researchers from academia and industry who want to get to know a new benchmarking platform for autonomous driving and multi-agent systems tailored to the analysis of interactive decision making algorithms. BARK's offers a unique approach with behavior models being used exchangeably for prediction, planning and simulation. This could attract domain experts providing them a comprehensive framework for research in behavior modeling.
-- Practitioners from industry who want to extend their workflow and easily benchmark developed planning approaches against other state-of-the-art models in a variety of standard scenarios.
+<br />
+<br />
 
+
+<b>Target audience:</b>
+- <i>PhD students</i> (in robotics, in software engineering) who want to practically learn about cutting edge benchmarking approaches for interactive decision making algorithms. This tutorial provides a good entry point to understand the state-of-the-art in this field. It gives them an understanding of the current challenges and upcoming future research directions. By gaining hands-on-experience with problems in interactive decision making, new researches are encouraged to directly tackle the open problems in this field.
+- <i>Experienced robotics researchers from academia</i> and industry who want to get to know a new benchmarking platform for autonomous driving and multi-agent systems tailored to the analysis of interactive decision making algorithms. BARK's offers a unique approach with behavior models being used exchangeably for prediction, planning and simulation. This could attract domain experts providing them a comprehensive framework for research in behavior modeling.
+- <i>Practitioners from industry</i> who want to extend their workflow and easily benchmark developed planning approaches against other state-of-the-art models in a variety of standard scenarios.
+<br />
+<br />
 To get the most out of the tutorial, the participants should have some background in decision making, i.e understand the fundamental principles of decision
 problems, e.g. MDPs and POMDPs, and have experience with Python and a basic understanding of C++.
+<br />
 
-### Resources
+## Resources
 
 Relevant links to give an impression on the background on which this tutorial is based:
 - [Bark Core on GitHub](https://github.com/bark-simulator/bark)
@@ -55,21 +61,63 @@ Relevant links to give an impression on the background on which this tutorial is
 
 ## Program
 The tutorial mixes slide presentations and interactive sessions. Short spot light talks will provide hands-on experience from industry researchers.
-### Time Plan
-| Time        | Talk           | Comment  |
-| ------------- |:-------------:| -----:|
-| 9:00 - 9:30      | Principles of Interactive Decision Making | Slides presentation |
-| 9:30 - 10:00      | Requirements on Benchmarking & Introduction to BARK | Slides presentation |
-| 10:00 - 10:30     | BARK Installation & Setup | Interactive Session |
-| 10:30 - 11:00      | Coffee Break |  |
-| 11:00 - 12:00    | Design of Scenario Set for Benchmarking, Start Benchmarking | Interactive Session |
-| 12:00 - 12:30      | Multi-Agent and Uncertainty-Aware Planning | Slides Presentation |
-| 12:30 - 13:00    | Analysis and Discussion of Benchmark, Open Questions | Interactive Session  |
-| 13:00      | End |   |
+<br />
+<table class="table-auto">
+  <thead>
+    <tr>
+      <th class="px-4 py-2">Time</th>
+      <th class="px-4 py-2">Talk</th>
+      <th class="px-4 py-2">Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">9:00 - 9:30</td>
+      <td class="border px-4 py-2">Principles of Interactive Decision Making</td>
+      <td class="border px-4 py-2">Slides presentation</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">9:30 - 10:00</td>
+      <td class="border px-4 py-2">Requirements on Benchmarking & Introduction to BARK</td>
+      <td class="border px-4 py-2">Slides presentation</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10:00 - 10:30</td>
+      <td class="border px-4 py-2">BARK Installation & Setup</td>
+      <td class="border px-4 py-2">Interactive Session</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10:30 - 11:00</td>
+      <td class="border px-4 py-2">Coffee Break</td>
+      <td class="border px-4 py-2"></td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">11:00 - 12:00</td>
+      <td class="border px-4 py-2">Design of Scenario Set for Benchmarking, Start Benchmarking</td>
+      <td class="border px-4 py-2">Interactive Session</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">12:00 - 12:30</td>
+      <td class="border px-4 py-2">Multi-Agent and Uncertainty-Aware Planning</td>
+      <td class="border px-4 py-2">Slides Presentation</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">12:30 - 13:00</td>
+      <td class="border px-4 py-2">Analysis and Discussion of Benchmark, Open Questions</td>
+      <td class="border px-4 py-2">Interactive Session </td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">13:00</td>
+      <td class="border px-4 py-2">End</td>
+      <td class="border px-4 py-2"></td>
+    </tr>
+  </tbody>
+</table>
+<br />
 
-### Guests Speakers 
+### Guests Speakers:
 
-- Constantin Hubmann, PhD, Toyota Research Institute, US
+- <b>Constantin Hubmann</b>, PhD, Toyota Research Institute, US
 
 ## About BARK
 
@@ -79,5 +127,10 @@ In BARK, behavior models are (re-)used for planning, prediction, and simulation.
 
 
 In addition to that BARK provides an easy to use benchmarking process to compare various behavior models based on using BARK's data-based or sampling-based scenario generation. BARK supports replay of the [Interaction Dataset](https://interaction-dataset.com/) with the possibility to (partially) exchange recorded behavior with interactive models. Coverage-based sampling criteria are supported not only over physical scenario properties such as velocity and vehicle distance ranges, but also over hidden behavior model parameters.
+<br />
+<br />
 
 ![BARK Simulator](./images/bark_screenshot.png)
+
+<br />
+<br />
