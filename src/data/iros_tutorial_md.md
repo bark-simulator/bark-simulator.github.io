@@ -4,7 +4,7 @@ Vehicles using BARK"
 subtitle: "Tutorial at IROS 2020, Oct. 25, Las Vegas, USA"
 knoll: "Since 2001, Alois C. Knoll has been a professor of Computer Science at the Department of Informatics of the Technische Universität München. His research interests include cognitive, medical and sensor-based robotics, multi-agent systems, data fusion, adaptive systems, multimedia information retrieval, model-driven development of embedded systems with applications to automotive software and electric transportation, as well as simulation systems for robotics and traffic. In these fields, he has published over 600 technical papers and guest-edited international journals. At present, among other projects, he is the coordinator of the EU-Project ECHORD++, a large initiative for bringing together robotics industry, research institutes and universities with the aim of advancing new robot technologies to market-readiness. He is leader of the EU Human Brain Project's section on Neurorobotics, one of the two EU ICT Flagships with the largest funding ever in the EU's DG for research."
 hart: "Patrick Hart is a PhD student at the Technical University of Munich (TUM) and fortiss.
-His main research is how agents can learn complex behaviors in uncertain environments — using a reward signal or even less.
+His main research interest is how agents can learn complex behaviors in uncertain environments — using a reward signal or even less.
 He obtained his Master's degree from the Karlsruhe Institute of Technology (KIT) where his studies were centered around robotics, advanced mechatronics, and autonomous driving.
 He is the initiator of BARK machine learning (BARK-ML) and one of the core developers of BARK."
 esterle: "Esterle's description."
@@ -125,10 +125,11 @@ The tutorial mixes slide presentations and interactive sessions. Short spot ligh
 ## About BARK
 
 Predicting and planning interactive behaviors in complex traffic situations presents a challenging task. Especially in scenarios involving multiple traffic participants that interact densely, autonomous vehicles still struggle to interpret situations and to eventually achieve their own driving goal. BARK is a semantic simulation framework for autonomous agents with a special focus on autonomous driving. Its behavior model-centric design allows for the rapid development, training and benchmarking of various decision-making algorithms.
-
+<br />
+<br />
 In BARK, behavior models are (re-)used for planning, prediction, and simulation. A range of models is currently available, ranging from simplistic car-following to rule-based intersection crossing models and models derived from the planning community such as Monte-Carlo Tree Search and Reinforcement Learning-based behavior models.
-
-
+<br />
+<br />
 In addition to that BARK provides an easy to use benchmarking process to compare various behavior models based on using BARK's data-based or sampling-based scenario generation. BARK supports replay of the [Interaction Dataset](https://interaction-dataset.com/) with the possibility to (partially) exchange recorded behavior with interactive models. Coverage-based sampling criteria are supported not only over physical scenario properties such as velocity and vehicle distance ranges, but also over hidden behavior model parameters.
 <br />
 <br />
