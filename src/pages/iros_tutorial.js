@@ -41,7 +41,18 @@ const iros_tutorial = ({data}) => {
           <div class="w-full md:w-1/3">
             <RoundComponent title="Tobias Kessler" description={data.markdownRemark.frontmatter.kessler} image={GetNode(data, "kessler").childImageSharp.fluid} />
           </div>
-
+        </div>
+        <h2 class="text-3xl text-gray-800 mt-10">Supported by</h2>
+        <div class="flex flex-wrap sm:justify-center mb-12">
+          <div class="w-full md:w-1/3">
+            <RoundComponent title="fortiss" description="" image={GetNode(data, "Logo_fortiss_RGB_white-blue").childImageSharp.fluid} />
+          </div>
+          <div class="w-full md:w-1/3">
+            <RoundComponent title="TUM" description="" image={GetNode(data, "tum_logo").childImageSharp.fluid}  />
+          </div>
+          <div class="w-full md:w-1/3">
+            <RoundComponent title="AID" description="" image={GetNode(data, "aid").childImageSharp.fluid}  />
+          </div>
         </div>
       </div>
     </div>
