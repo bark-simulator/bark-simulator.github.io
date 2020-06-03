@@ -10,9 +10,9 @@ His main research interest is how agents can learn complex behaviors in uncertai
 He obtained his Master's degree from the Karlsruhe Institute of Technology (KIT) and wrote his master thesis at the FZI Karlsruhe about search-based motion planning for autonomous vehicles in 2016.
 In 2017, he then joined the autonomous systems group at fortiss and began to pursue his PhD.
 At fortiss, he gained valuable insights in the field of autonomous driving working on autonomous valet parking, autonomous vehicles, and on simulation.
-He is the initiator of BARK machine learning (BARK-ML) and one of the core developers of BARK."
+He is the initiator of BARK machine learning (BARK-ML) and one of the initiators and developers of BARK."
 
-esterle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit ac ipsum luctus faucibus. Aenean dui ligula, cursus porttitor sagittis eu, dictum eget mi. Nullam urna sem, consectetur at nibh non, pellentesque fermentum elit. Pellentesque dapibus viverra consequat. Etiam sed ex ultricies, tempor mauris faucibus, molestie ex. Vestibulum in tristique risus, sit amet vestibulum lacus. Praesent sit amet felis sit amet diam fermentum gravida."
+esterle: "Klemens Esterle is a PhD student at TUM and fortiss. His research focuses on combining formal methods to model multi-agent constraints from traffic rules with interactive behavior planning. He studied Mechatronics Engineering at the Technische Universität Dresden, graduating in 2014. Afterwards, he worked as a simulation engineer in the field of systems engineering. In 2017, he joined fortiss as a staff researcher in the competence field autonomous systems and sensor systems and started his PhD. He gained experience in autonomous driving during industry cooperations for autonomous vallet parking, prediction and simulation. He is one of the initiators and main developers of BARK."
 
 bernhard: "Julian Bernhard is a PhD student at TUM and fortiss. His research focuses on risk-constrained interactive motion planning under behavioral uncertainty. He studied Electrical Engineering at the Technische Universität München with focus on machine learning, control theory and signal processing and graduated with the Master of Science in 2014. Afterwards, he worked as a consulting engineer in the field of signal processing. In 2017, he joined fortiss as a staff researcher in the competence field autonomous systems and sensor systems and started his PhD. He gained experience in autonomous driving during industry cooperations for autonomous vallet parking, during working on autonomous vehicle prototypes and is one of the initiators and main developers of BARK."
 
@@ -21,7 +21,7 @@ kessler: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus bland
 
 
 ## About the Tutorial
-BARK is an open-source benchmarking platform to foster a comparison of approaches developed in the field of interactive decision making for self-driving vehicles.
+BARK is an open-source benchmarking platform to foster a comparison of approaches developed in the field of interactive behavior planning for self-driving vehicles.
 BARK offers a unique approach with behavior models being used exchangeably for prediction, planning, and simulation.
 To grow the community around a common benchmarking platform, we want to enable participants to employ BARK within research and industry projects.
 <br />
