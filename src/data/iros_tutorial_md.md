@@ -148,8 +148,11 @@ Coverage-based sampling criteria are supported not only over physical scenario p
 <br />
 <br />
 
-![BARK Simulator](./images/bark_screenshot.png)
+<div align="center">
 
+![BARK Simulator](./images/merging.gif)
+
+</div>
 <br />
 <br />
 
