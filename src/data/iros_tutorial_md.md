@@ -10,7 +10,7 @@ His main research interest is how agents can learn complex behaviors in uncertai
 He obtained his Master's degree from the Karlsruhe Institute of Technology (KIT) and wrote his master thesis at the FZI Karlsruhe about search-based motion planning for autonomous vehicles in 2016.
 In 2017, he then joined the autonomous systems group at fortiss and began to pursue his PhD.
 At fortiss, he gained valuable insights in the field of autonomous driving working on autonomous valet parking, autonomous vehicles, and on simulation.
-He is the initiator of BARK machine learning (BARK-ML) and one of the initiators and developers of BARK."
+He is the initiator of BARK machine learning (BARK-ML) and one of the initiators and main developers of BARK."
 
 esterle: "Klemens Esterle is a PhD student at TUM and fortiss. His research focuses on combining formal methods to model multi-agent constraints from traffic rules with interactive behavior planning. He studied Mechatronics Engineering at the Technische Universität Dresden, graduating in 2014. Afterwards, he worked as a simulation engineer in the field of systems engineering. In 2017, he joined fortiss as a staff researcher in the competence field autonomous systems and sensor systems and started his PhD. He gained experience in autonomous driving during industry cooperations for autonomous valet parking, prediction and simulation. He is one of the initiators and main developers of BARK."
 
