@@ -34,7 +34,7 @@ const AboutPage = ({data}) => {
         <RoundComponent title="Mansoor Nasir Cheema" description="Developer" image="" linkedinUrl="" githubUrl="https://github.com/mansoorcheema" />
       </div>
       <div class="w-full md:w-1/4">
-        <RoundComponent title="tin1254" description="Developer" image="" linkedinUrl="" githubUrl="https://github.com/tin1254" />
+        <RoundComponent title="Chan Tin Chon" description="Developer" image="" linkedinUrl="" githubUrl="https://github.com/tin1254" />
       </div>
     </div>
   </Layout>)
