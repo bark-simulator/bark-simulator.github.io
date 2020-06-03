@@ -34,7 +34,7 @@ const AboutPage = ({data}) => {
         <RoundComponent title="Mansoor Nasir Cheema" description="Developer" image="" linkedinUrl="" githubUrl="https://github.com/mansoorcheema" />
       </div>
       <div class="w-full md:w-1/4">
-        <RoundComponent title="Chan Tin Chon" description="Developer" image="" linkedinUrl="" githubUrl="https://github.com/tin1254" />
+        <RoundComponent title="Chan Tin Chon" description="Developer" image={data.chan.childImageSharp.fluid} linkedinUrl="" githubUrl="https://github.com/tin1254" />
       </div>
     </div>
   </Layout>)
@@ -75,6 +75,14 @@ export const query = graphql`
       }
     }
     luis_gressenbuch: file(relativePath: { eq: "images/luis_gressenbuch.png" }) {
+      id,
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    chan: file(relativePath: { eq: "images/chan.png" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
