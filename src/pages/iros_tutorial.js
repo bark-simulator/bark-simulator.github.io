@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HorizontalComponent from "../components/horizontal_component"
+import RoundComponent from "../components/round_page"
 
 const iros_tutorial = ({data}) => {
   function GetNode(data, name){
@@ -31,6 +32,19 @@ const iros_tutorial = ({data}) => {
           <HorizontalComponent title="Patrick Hart" description={data.markdownRemark.frontmatter.hart} image={GetNode(data, "hart").childImageSharp.fluid} />
           <HorizontalComponent title="Tobias Kessler" description={data.markdownRemark.frontmatter.kessler} image={GetNode(data, "kessler").childImageSharp.fluid} />
         </div>
+
+      <h1 class="text-3xl text-gray-800 mt-10">Supporters</h1>
+      <div class="flex flex-wrap sm:justify-center mb-12">
+        <a href="https://www.fortiss.org/" class="block w-full md:w-1/3 p-12">
+          <Img objectFit="cover" fluid={GetNode(data, "Logo_fortiss_RGB_white-blue").childImageSharp.fluid} />
+        </a>
+        <a href="https://aid-driving.eu/" class="block w-full md:w-1/3 p-12">
+          <Img objectFit="cover" fluid={GetNode(data, "aid").childImageSharp.fluid} />
+        </a>
+        <a href="https://www.tum.de/" class="block w-full md:w-1/3 p-12">
+          <Img objectFit="cover" fluid={GetNode(data, "tum_logo").childImageSharp.fluid} /> 
+        </a>
+      </div>
       </div>
     </div>
   </Layout>)
