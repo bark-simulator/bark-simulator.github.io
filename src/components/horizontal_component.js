@@ -22,7 +22,7 @@ const HorizontalComponent = ({ title, description, image, linkedinUrl, githubUrl
                             {title}
                         </h1>
                         <p class="mt-1 tracking-wide text-lg leading-relaxed" style={{minHeight: "200px"}}>
-                            {description}
+                            <p dangerouslySetInnerHTML={{ __html: description }}></p>
                         </p>
                     </div>
                 </div>

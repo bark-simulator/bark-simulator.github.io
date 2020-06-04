@@ -3,11 +3,17 @@ title: "Benchmarking Interactive Behavior Planning for Self-Driving
 Vehicles using BARK"
 subtitle: "Tutorial at IROS 2020, Oct. 25, Las Vegas, USA"
 
-knoll: "Since 2001, Alois C. Knoll has been a professor of Computer Science at the Department of Informatics of the Technische Universität München. His research interests include cognitive, medical and sensor-based robotics, multi-agent systems, data fusion, adaptive systems, multimedia information retrieval, model-driven development of embedded systems with applications to automotive software and electric transportation, as well as simulation systems for robotics and traffic. In these fields, he has published over 600 technical papers and guest-edited international journals. At present, among other projects, he is the coordinator of the EU-Project ECHORD++, a large initiative for bringing together robotics industry, research institutes and universities with the aim of advancing new robot technologies to market-readiness. He is leader of the EU Human Brain Project's section on Neurorobotics, one of the two EU ICT Flagships with the largest funding ever in the EU's DG for research."
+knoll: "Since 2001, Alois C. Knoll has been a professor of Computer Science at the Department of Informatics of the Technische Universität München. His research interests include cognitive, medical and sensor-based robotics, multi-agent systems, data fusion, adaptive systems, multimedia information retrieval, model-driven development of embedded systems with applications to automotive software and electric transportation, as well as simulation systems for robotics and traffic.
+<br />
+<br />
+In these fields, he has published over 800 technical papers and guest-edited international journals.
+<br />
+<br />
+He was the coordinator of the EU-Project ECHORD++, a large initiative for bringing together robotics industry, research institutes and universities with the aim of advancing new robot technologies to market-readiness. He is currently one of the directors of the EU Human Brain Project, (and head of the section on Neurorobotics), which runs from 2013 – 2023, with a total expected project budget of 1 billion EUR, of which ~120 million EUR are expected to go to the Neurorobotics Platform. He has also coordinated many other nationally and internationally funded projects. He is a senior member of the IEEE, a member of the German Society of Informatics and a Fellow of the School of Engineering of the University of Tokyo (2010)."
 
-hart: "Patrick Hart is a PhD student at the Technical University of Munich (TUM) and fortiss.
-His main research interest is how agents can learn complex behaviors in uncertain environments — using a reward signal or even less.
-He obtained his Master's degree from the Karlsruhe Institute of Technology (KIT) and wrote his master thesis at the FZI Karlsruhe about search-based motion planning for autonomous vehicles in 2016.
+hart: "Patrick Hart is a PhD student at the Technical University of Munich and fortiss.
+His main research interest is how agents can learn complex behaviors in uncertain environments.
+He obtained his Master's degree from the Karlsruhe Institute of Technology and wrote his master thesis at the FZI Karlsruhe about search-based motion planning for autonomous vehicles in 2016.
 In 2017, he then joined the autonomous systems group at fortiss and began to pursue his PhD.
 At fortiss, he gained valuable insights in the field of autonomous driving working on autonomous valet parking, autonomous vehicles, and on simulation.
 He is the initiator of BARK machine learning (BARK-ML) and one of the initiators and main developers of BARK."
@@ -16,7 +22,7 @@ esterle: "Klemens Esterle is a PhD student at TUM and fortiss. His research focu
 
 bernhard: "Julian Bernhard is a PhD student at TUM and fortiss. His research focuses on risk-constrained interactive motion planning under behavioral uncertainty. He studied Electrical Engineering at the Technische Universität München with focus on machine learning, control theory and signal processing and graduated with the Master of Science in 2014. Afterwards, he worked as a consulting engineer in the field of signal processing. In 2017, he joined fortiss as a staff researcher in the competence field autonomous systems and sensor systems and started his PhD. He gained experience in autonomous driving during industry cooperations for autonomous valet parking, during working on autonomous vehicle prototypes and is one of the initiators and main developers of BARK."
 
-kessler: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit ac ipsum luctus faucibus. Aenean dui ligula, cursus porttitor sagittis eu, dictum eget mi. Nullam urna sem, consectetur at nibh non, pellentesque fermentum elit. Pellentesque dapibus viverra consequat. Etiam sed ex ultricies, tempor mauris faucibus, molestie ex. Vestibulum in tristique risus, sit amet vestibulum lacus. Praesent sit amet felis sit amet diam fermentum gravida."
+kessler: "Tobias works as a scientist at fortiss and is a PhD student at the Technical University of Munich. His main research focus is planning cooperative and interactive behaviors for autonomous vehicles alongside with a smooth and safe motion using optimization-based methods such as mixed-integer programming. He also maintains the autonomous driving stack, based on Apollo, of the institute’s vehicle prototype. He is one of the initiators and developers of the simulation tool BARK and has an industrial background in vehicle dynamics simulation. Tobias holds a Master’s degree in Mathematics from the Technical University of Munich."
 ---
 
 
