@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import RoundComponent from "../components/round_page"
+import HorizontalComponent from "../components/horizontal_component"
 
 const iros_tutorial = ({data}) => {
   function GetNode(data, name){
@@ -20,39 +20,16 @@ const iros_tutorial = ({data}) => {
   return (<Layout>
     <SEO title="IROS 2020 - BARK Tutorial" />
     <div class="flex flex-wrap sm:justify-center">
-      <div class="w-full lg:w-3/4">
+      <div class="w-full lg:w-3/5">
         <h1 class="text-4xl text-center text-gray-800 mt-6">{data.markdownRemark.frontmatter.title}</h1>
         <h1 class="text-xl mb-12 text-center text-gray-700 italic">{data.markdownRemark.frontmatter.subtitle}</h1>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
-        <h2 class="text-3xl text-gray-800 mt-10">Organizers</h2>
         <div class="flex flex-wrap sm:justify-center mb-12">
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="Prof. Alois Knoll" description={data.markdownRemark.frontmatter.knoll} image={GetNode(data, "knoll").childImageSharp.fluid} />
-          </div>
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="Julian Bernhard" description={data.markdownRemark.frontmatter.bernhard} image={GetNode(data, "bernhard").childImageSharp.fluid}  />
-          </div>
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="Klemens Esterle" description={data.markdownRemark.frontmatter.esterle} image={GetNode(data, "esterle").childImageSharp.fluid} />
-          </div>
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="Patrick Hart" description={data.markdownRemark.frontmatter.hart} image={GetNode(data, "hart").childImageSharp.fluid} />
-          </div>
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="Tobias Kessler" description={data.markdownRemark.frontmatter.kessler} image={GetNode(data, "kessler").childImageSharp.fluid} />
-          </div>
-        </div>
-        <h2 class="text-3xl text-gray-800 mt-10">Supported by</h2>
-        <div class="flex flex-wrap sm:justify-center mb-12">
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="fortiss" description="" image={GetNode(data, "Logo_fortiss_RGB_white-blue").childImageSharp.fluid} />
-          </div>
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="TUM" description="" image={GetNode(data, "tum_logo").childImageSharp.fluid}  />
-          </div>
-          <div class="w-full md:w-1/3">
-            <RoundComponent title="AID" description="" image={GetNode(data, "aid").childImageSharp.fluid}  />
-          </div>
+          <HorizontalComponent title="Prof. Alois Knoll" description={data.markdownRemark.frontmatter.knoll} image={GetNode(data, "knoll").childImageSharp.fluid} />
+          <HorizontalComponent title="Julian Bernhard" description={data.markdownRemark.frontmatter.bernhard} image={GetNode(data, "bernhard").childImageSharp.fluid}  />
+          <HorizontalComponent title="Klemens Esterle" description={data.markdownRemark.frontmatter.esterle} image={GetNode(data, "esterle").childImageSharp.fluid} />
+          <HorizontalComponent title="Patrick Hart" description={data.markdownRemark.frontmatter.hart} image={GetNode(data, "hart").childImageSharp.fluid} />
+          <HorizontalComponent title="Tobias Kessler" description={data.markdownRemark.frontmatter.kessler} image={GetNode(data, "kessler").childImageSharp.fluid} />
         </div>
       </div>
     </div>
