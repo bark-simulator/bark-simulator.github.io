@@ -59,13 +59,18 @@ To grow the community around a common benchmarking platform, we want to enable p
 To take away as much as possible of the tutorial, the participants should have some background in decision making, i.e understand the fundamental principles of decision
 problems, e.g. MDPs and POMDPs, and have experience with Python and a basic understanding of C++.
 <br />
+<br />
 
-## Resources
-
+<b> Resources</b><br />
 Relevant links giving an impression on the background on which this tutorial is based:
 - [Bark Core on GitHub](https://github.com/bark-simulator/bark)
 - [Bark Paper](https://arxiv.org/abs/2003.02604)
 - [Bark Ecosystem on GitHub](https://github.com/bark-simulator)
+
+
+<br />
+<b>Contact</b><br />
+Please email us at bernhard(at)fortiss.org if you have any comments and feedback.
 
 
 ## News:
@@ -135,6 +140,7 @@ Short spot light talks will provide hands-on experience from industry researcher
 ### Guests Speakers:
 
 - <b>Constantin Hubmann</b>, PhD, Toyota Research Institute, US
+
 
 ## About BARK
 
