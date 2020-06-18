@@ -5,7 +5,7 @@ subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 
 Before diving deeper into the [building blocks](/tutorials/building_blocks/) of BARK, let us first run a simple example.
 <br />
-An example provided in BARK can be run, e.g. the merging scenario using `bazel run //examples:merging`:
+An example provided in BARK can be run, e.g. the merging scenario using `bazel run //bark/examples:merging`:
 
 <div align="center">
 
@@ -20,15 +20,17 @@ Now, that we know how to run an example, let us go into some details.
 
 First, we need to import all required modules:
 ```python
-from modules.runtime.commons.parameters import ParameterServer
-from modules.runtime.viewer.matplotlib_viewer import MPViewer
-from modules.runtime.scenario.scenario_generation.config_with_ease import \
+from bark.runtime.commons.parameters import ParameterServer
+from bark.runtime.viewer.matplotlib_viewer import MPViewer
+from bark.runtime.viewer.video_renderer import VideoRenderer
+from bark.runtime.scenario.scenario_generation.config_with_ease import \
   LaneCorridorConfig, ConfigWithEase
-from modules.runtime.runtime import Runtime
+from bark.runtime.runtime import Runtime
+from bark.runtime.viewer.panda3d_easy import Panda3dViewer
 # bark c++ imports
-from bark.world.opendrive import *
-from bark.world.goal_definition import *
-from bark.models.behavior import *
+from bark.core.world.opendrive import *
+from bark.core.world.goal_definition import *
+from bark.core.models.behavior import *
 ```
 This includes the `ParameterServer` storing all parameters, the `MPViewer` viewer for rendering, the `ConfigWithEase` scenario generation and the `Runtime`.
 Additionally, we also import the BARK goal definitions, OpenDrive map helpers and the behaviors.
@@ -78,11 +80,13 @@ right_lane = CustomLaneCorridorConfig(params=param_server,
                                       s_max=20.)
 
 scenarios = \
-  ConfigWithEase(num_scenarios=3,
-                 map_file_name="modules/runtime/tests/data/DR_DEU_Merging_MT_v01_shifted.xodr",
-                 random_seed=0,
-                 params=param_server,
-                 lane_corridor_configs=[left_lane, right_lane])
+  ConfigWithEase(
+    num_scenarios=3,
+    map_file_name=os.path.join(os.path.dirname(__file__),
+      "../runtime/tests/data/DR_DEU_Merging_MT_v01_shifted.xodr"),
+    random_seed=0,
+    params=param_server,
+    lane_corridor_configs=[left_lane, right_lane])
 ```
 
 In this case, the `ConfigWithEase` scenario generation produces three (`num_scenarios=3`) scenarios.
@@ -124,7 +128,7 @@ for _ in range(0, 3):
 ## Other Examples
 The other examples can be run in a similar fashion using:
 
-* `bazel run //examples:highway`: Two-lane highway example
-* `bazel run //examples:intersection`: Three way intersection
-* `bazel run //examples:interaction_dataset`: Dataset replay
-* `bazel run //examples:benchmark_database`: Benchmarks behaviors using a scenario database
+* `bazel run //bark/examples:highway`: Two-lane highway example
+* `bazel run //bark/examples:intersection`: Three way intersection
+* `bazel run //bark/examples:interaction_dataset`: Dataset replay
+* `bazel run //bark/examples:benchmark_database`: Benchmarks behaviors using a scenario database

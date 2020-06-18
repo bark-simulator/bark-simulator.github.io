@@ -20,7 +20,7 @@ A basic derived behavior model class could look something like this:
 
 ```python
 import numpy as np
-from bark.models.behavior import BehaviorModel
+from bark.core.models.behavior import BehaviorModel
 
 class DerivedBehaviorModel(BehaviorModel):
   def __init__(self,

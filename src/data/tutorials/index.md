@@ -40,4 +40,4 @@ On macOS, we recommend the following Python setup:
 ## Frequently Asked Questions (FAQs)
 
 ### Python.h not found
-Make sure that there is a 'Python.h' file in the `python/venv` folder.
+Make sure that there is a 'Python.h' file in the `bark/python_wrapper/venv` folder.

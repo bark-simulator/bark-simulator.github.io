@@ -38,9 +38,6 @@ const iros_tutorial = ({data}) => {
         <a href="https://www.fortiss.org/" class="block w-full md:w-1/3 p-12">
           <Img objectFit="cover" fluid={GetNode(data, "Logo_fortiss_RGB_white-blue").childImageSharp.fluid} />
         </a>
-        <a href="https://aid-driving.eu/" class="block w-full md:w-1/3 p-12">
-          <Img objectFit="cover" fluid={GetNode(data, "aid").childImageSharp.fluid} />
-        </a>
         <a href="https://www.tum.de/" class="block w-full md:w-1/3 p-12">
           <Img objectFit="cover" fluid={GetNode(data, "tum_logo").childImageSharp.fluid} /> 
         </a>
