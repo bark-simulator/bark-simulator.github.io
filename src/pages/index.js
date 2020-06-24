@@ -46,7 +46,7 @@ const IndexPage = ({data}) => {
 }
 export const query = graphql`
   query IndexPageQuery {
-    barkScreenshot: file(relativePath: { eq: "images/bark_screenshot.png" }) {
+    barkScreenshot: file(relativePath: { eq: "images/bark_logo.jpg" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
