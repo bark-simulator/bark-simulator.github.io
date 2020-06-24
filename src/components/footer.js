@@ -5,8 +5,10 @@ import Image from "../components/image"
 import "../styles/site.css"
 
 const Footer = ({}) => (
-  <footer class="flex items-center justify-center border-t mt-24 text-gray-600" >
-    <div class="flex items-center justify-between flex-wrap p-6" style={{minWidth: `100px`, maxWidth: `1640px`, width: `100%`}}>
+  <div className="mt-12">
+  <div className="skewed-divider"></div>
+  <footer class="flex items-center justify-center text-gray-200" style={{padding: `100px 0% 0% 0%`}} >
+    <div class="flex items-center justify-between flex-wrap py-8 px-6 pt-8" style={{width: `100%`, backgroundColor: `rgb(3, 70, 147)`}}>
         <div class="w-1/2 text-sm">
           © {new Date().getFullYear()} Julian Bernhard, Klemens Esterle, Patrick Hart and Tobias Kessler
         </div>
@@ -15,6 +17,7 @@ const Footer = ({}) => (
         </div>
     </div>
   </footer>
+  </div>
 )
 
 export default Footer
