@@ -36,7 +36,7 @@ const IndexPage = ({data}) => {
             Unlike many simulation frameworks, BARK offers benchmarking using fully interactive behaviors.
           </p>
           <div class="flex justify-center py-2 mt-8">
-          <Link to="/tutorials/" style={{background: 'linear-gradient(190deg,#2983FB,#1353B9)'}} class="block shadow-2xl transition duration-500 ease-in-out border text-white hover:shadow-lg font-semibold py-4 px-6 rounded-lg ">
+          <Link to="/tutorials/" style={{background: 'linear-gradient(190deg,#2983FB,#1353B9)'}} class="block shadow-2xl transition duration-500 ease-in-out border text-white focus:shadow-lg font-semibold py-4 px-6 rounded-lg ">
             Get Started &#xbb;
           </Link>
           </div>
