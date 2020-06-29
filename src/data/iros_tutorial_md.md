@@ -139,8 +139,25 @@ Short spot light talks will provide hands-on experience from industry researcher
 
 ### Guests Speakers:
 
-- <b>Constantin Hubmann</b>, PhD, Toyota Research Institute, US
-
+<div class="flex flex-wrap mt-4 mb-8">
+    <div class="w-full">
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/6 justify-center mb-2 mt-2">
+                <div class="object-center w-32 h-32 rounded-full bg-gray-400 overflow-hidden">
+                  <img class="object-cover h-32 w-full" src="../Hubmann.png" />
+                </div>
+            </div>
+            <div class="w-full md:w-5/6">
+                <h1 class="w-full text-left text-xl font-semibold text-gray-800">
+                Constantin Hubmann
+                </h1>
+                <p class="mt-1 tracking-wide text-normal leading-relaxed" style={{minHeight: "200px"}}>
+                    Constantin Hubmann received the bachelor's and master's degree in electrical engineering and information technology from Technische Universität München (TUM), München, Germany, in 2012 and 2014, respectively. He pursued his doctoral degree with the Chair of Measurement and Control Engineering, Karlsruher Institut für Technologie, Karlsruhe, Germany and in cooperation with the BMW Group. Subsequently, he joined the Toyota Research Institute (TRI) in Los Altos, USA, as a research scientist. His research interests include belief state planning and decision making under uncertainty for autonomous driving. He recently became very interested in learning from demonstrations.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 ## About BARK
 
