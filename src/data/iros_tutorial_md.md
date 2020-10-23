@@ -33,8 +33,6 @@ To grow the community around a common benchmarking platform, we want to enable p
 <br />
 <br />
 <b>Attendees of the tutorial will:</b>
-- Understand the principles of state-of-the-art approaches in interactive behavior planning (POMDP planning, Multi-Agent planning)
-- Understand the pros and cons of state-of-the-art approaches
 - Understand requirements on benchmarking platforms to systematically develop interactive behavior planners
 - Gain hands-on-experience with BARK as benchmarking platform for interactive planners
 - Implement and benchmark their own interactive-behavior planner
@@ -82,7 +80,7 @@ Please email us at bernhard(at)fortiss.org if you have any comments and feedback
 ## Program
 
 The tutorial mixes slide presentations and interactive sessions.
-Short spot light talks will provide hands-on experience from industry researchers.
+A short spot light talk will provide hands on knowledge about industry research.
 <br />
 <table class="table-auto">
   <thead>
