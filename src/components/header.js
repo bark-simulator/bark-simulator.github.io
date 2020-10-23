@@ -48,9 +48,9 @@ const Header = ({ siteTitle }) => {
               <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-600 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
                 About
               </Link>
-              {/* <Link to="/iros_tutorial/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
+              <Link to="/iros_tutorial/" activeClassName="block mt-4 lg:inline-block lg:mt-0 text-blue-500 font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:text-blue-500 mr-6">
                 IROS 2020
-              </Link> */}
+              </Link>
             </div>
             <div>
               <a href="https://arxiv.org/abs/2003.02604" class="transition duration-500 ease-in-out inline-block text-base px-4 py-2 leading-none border rounded text-blue border-blue hover:border-blue-500 hover:text-blue-500 hover:bg-white mt-4 lg:mt-0 mr-2">@arXiv</a>

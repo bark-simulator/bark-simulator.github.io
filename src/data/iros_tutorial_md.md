@@ -87,51 +87,60 @@ Short spot light talks will provide hands-on experience from industry researcher
 <table class="table-auto">
   <thead>
     <tr>
-      <th class="px-4 py-2">Time</th>
-      <th class="px-4 py-2">Talk</th>
-      <th class="px-4 py-2">Comment</th>
+      <th class="px-4 py-2">Duration</th>
+      <th class="px-4 py-2">Content</th>
+      <th class="px-4 py-2">Type</th>
+      <th class="px-4 py-2">Speaker</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td class="border px-4 py-2">9:00 - 9:30</td>
-      <td class="border px-4 py-2">Principles of Interactive Decision Making</td>
-      <td class="border px-4 py-2">Slides presentation</td>
+      <td class="border px-4 py-2">5 mins</td>
+      <td class="border px-4 py-2">Tutorial Overview</td>
+      <td class="border px-4 py-2">Slides</td>
+      <td class="border px-4 py-2">Julian Bernhard</td>
     </tr>
     <tr>
-      <td class="border px-4 py-2">9:30 - 10:00</td>
-      <td class="border px-4 py-2">Requirements on Benchmarking & Introduction to BARK</td>
-      <td class="border px-4 py-2">Slides presentation</td>
+      <td class="border px-4 py-2">15 mins</td>
+      <td class="border px-4 py-2">Requirements on benchmarking environments for interactive behavior generation, BARK in a nutshell, Example Use Cases of BARK</td>
+      <td class="border px-4 py-2">Slides</td>
+      <td class="border px-4 py-2">Julian Bernhard</td>
     </tr>
     <tr>
-      <td class="border px-4 py-2">10:00 - 10:30</td>
-      <td class="border px-4 py-2">BARK Installation & Setup</td>
-      <td class="border px-4 py-2">Interactive Session</td>
+      <td class="border px-4 py-2">40 mins</td>
+      <td class="border px-4 py-2">Industry-Research in interactive behavior generation </td>
+      <td class="border px-4 py-2">Sides</td>
+      <td class="border px-4 py-2">Konstantin Hubmann from Toyota Research Institute (TRI), USA </td>
     </tr>
     <tr>
-      <td class="border px-4 py-2">10:30 - 11:00</td>
-      <td class="border px-4 py-2">Coffee Break</td>
-      <td class="border px-4 py-2"></td>
+      <td class="border px-4 py-2">5 mins</td>
+      <td class="border px-4 py-2">BARK Installation and Setup</td>
+      <td class="border px-4 py-2">Hands-on</td>
+      <td class="border px-4 py-2">Patrick Hart</td>
     </tr>
     <tr>
-      <td class="border px-4 py-2">11:00 - 12:00</td>
-      <td class="border px-4 py-2">Design of Scenario Set for Benchmarking, Start Benchmarking</td>
-      <td class="border px-4 py-2">Interactive Session</td>
+      <td class="border px-4 py-2">15 mins</td>
+      <td class="border px-4 py-2">Development of a simple behavior planner in BARK</td>
+      <td class="border px-4 py-2">iPython Notebook</td>
+      <td class="border px-4 py-2">Patrick Hart</td>
     </tr>
     <tr>
-      <td class="border px-4 py-2">12:00 - 12:30</td>
-      <td class="border px-4 py-2">Multi-Agent and Uncertainty-Aware Planning</td>
-      <td class="border px-4 py-2">Slides Presentation</td>
+      <td class="border px-4 py-2">20 mins</td>
+      <td class="border px-4 py-2">Scenario generation with BARK</td>
+      <td class="border px-4 py-2">iPython Notebook</td>
+      <td class="border px-4 py-2">Julian Bernhard</td>
     </tr>
     <tr>
-      <td class="border px-4 py-2">12:30 - 13:00</td>
-      <td class="border px-4 py-2">Analysis and Discussion of Benchmark, Open Questions</td>
-      <td class="border px-4 py-2">Interactive Session </td>
+      <td class="border px-4 py-2">20 mins</td>
+      <td class="border px-4 py-2">Benchmarking process with BARK</td>
+      <td class="border px-4 py-2">iPython Notebook</td>
+      <td class="border px-4 py-2">Klemens Esterle</td>
     </tr>
     <tr>
-      <td class="border px-4 py-2">13:00</td>
-      <td class="border px-4 py-2">End</td>
-      <td class="border px-4 py-2"></td>
+      <td class="border px-4 py-2">5 mins</td>
+      <td class="border px-4 py-2">INTERACTION dataset with BARK</td>
+      <td class="border px-4 py-2">iPython Notebook</td>
+      <td class="border px-4 py-2">Tobias Kessler</td>
     </tr>
   </tbody>
 </table>
