@@ -41,3 +41,8 @@ On macOS, we recommend the following Python setup:
 
 ### Python.h not found
 Make sure that there is a 'Python.h' file in the `bark/python_wrapper/venv` folder.
+
+### GCC: Interal Compiler Error: Killed (program cc1plus)
+You might be running out of memory during the bazel build. 
+Try limiting the memory available to bark via 
+`bazel build //... --local_ram_resources=HOST_RAM*.4` (or any other build or test call).
