@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import "../styles/site.css"
 import Img from "gatsby-image"
-import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import { IoLogoLinkedin, IoLogoGithub, IoMdGlobe } from "react-icons/io";
 
-const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl }) => {
+const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl, websiteUrl }) => {
     return (
       <div class="flex flex-col p-6">
          <div class="flex w-full justify-center mb-3">
@@ -21,7 +21,7 @@ const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl }) =
          <div class="w-full text-center text-gray-700 tracking-wide leading-relaxed">
            {description}
          </div>
-         <div class="flex-wrap text-center mt-2">
+         <div class="flex-wrap text-center mt-2 space-x-3">
           {linkedinUrl != "" &&
             <a href={linkedinUrl}>
               <IoLogoLinkedin class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-blue-900 " />
@@ -30,6 +30,11 @@ const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl }) =
           {githubUrl != "" &&
           <a href={githubUrl}>
             <IoLogoGithub class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
+          </a>
+          }
+          {websiteUrl != "" &&
+          <a href={websiteUrl}>
+            <IoMdGlobe class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
           </a>
           }
          </div>
@@ -43,6 +48,7 @@ RoundComponent.propTypes = {
   image: PropTypes.string,
   linkedinUrl: PropTypes.string,
   githubUrl: PropTypes.string,
+  webSiteUrl: PropTypes.string
 }
 
 RoundComponent.defaultProps = {
@@ -50,7 +56,9 @@ RoundComponent.defaultProps = {
   description: ``,
   image: ``,
   linkedinUrl: ``,
-  githubUrl: ``
+  githubUrl: ``,
+  webSiteUrl: ``
+
 }
 
 export default RoundComponent
