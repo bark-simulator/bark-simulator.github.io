@@ -52,7 +52,7 @@ module.exports = {
               "list[ordered=false]": "list-disc list-inside",
               "list[ordered=true]": "list-decimal list-inside",
               "a": {
-                className: "text-blue-600",
+                className: "aggBlueText",
               }
             }
           },

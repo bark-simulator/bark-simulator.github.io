@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 const IndexPage = ({data}) => {
 
   return (<Layout>
-    <SEO title="Home" />
+    <SEO title="Simulation and Benchmarking | Autonomous Driving" />
       <div class="flex flex-wrap md:justify-center mt-4 content-center">
         <div class="w-full flex-wrap px-4 md:w-1/2 md:p-12 lg:px-24">
           <h1 class="text-4xl text-gray-800 font-normal mb-1 text-center">Centered on behavior models.</h1>

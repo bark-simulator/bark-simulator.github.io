@@ -34,7 +34,7 @@ const Header = ({ siteTitle }) => {
           </a>
           <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
-              <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 aggBlueText font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:aggBlueText mr-6">
+              <Link to="/" activeClassName="block mt-4 lg:inline-block lg:mt-0 aggBlueText font-semibold text-lg mr-6" class="block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:aggBlueText mr-6">
                 Simulation
               </Link>
               <Link to="/tutorials/" partiallyActive={true} activeClassName="block mt-4 lg:inline-block lg:mt-0 aggBlueText font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:aggBlueText mr-6">
@@ -48,9 +48,9 @@ const Header = ({ siteTitle }) => {
               </Link>
             </div>
             <div>
-              <a href="https://arxiv.org/abs/2003.02604" class="inline-block text-base px-4 py-2 leading-none border aggBlue text-white hover:border-gray-400 mt-4 lg:mt-0 mr-2">@arXiv</a>
+              <a href="https://arxiv.org/abs/2003.02604" class="inline-block text-base px-4 py-2 leading-none border text-blue hover:border-gray-400 mt-4 lg:mt-0 mr-2">@arXiv</a>
               <a href="https://bark-simulator.readthedocs.io/en/latest/" class="inline-block text-base px-4 py-2 leading-none border text-blue hover:border-gray-400 mt-4 lg:mt-0 mr-2">Documentation</a>
-              <a href="https://github.com/bark-simulator/bark" class="inline-block text-base px-4 py-2 leading-none border text-blue hover:border-gray-400 mt-4 lg:mt-0">Github</a>
+              <a href="https://github.com/bark-simulator/bark" class="inline-block text-base px-4 py-2 leading-none aggBlue text-white hover:border-gray-400 mt-4 lg:mt-0">Github</a>
             </div>
           </div>
         </div>
