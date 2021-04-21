@@ -5,7 +5,7 @@ subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 
 Before diving deeper into the [building blocks](/tutorials/building_blocks/) of BARK, let us first run a simple example.
 <br />
-An example provided in BARK can be run, e.g. the merging scenario using `bazel run //examples:merging`:
+An example provided in BARK can be run, e.g. the merging scenario using `bazel run //bark/examples:merging`:
 
 <div align="center">
 
@@ -128,7 +128,7 @@ for _ in range(0, 3):
 ## Other Examples
 The other examples can be run in a similar fashion using:
 
-* `bazel run //examples:highway`: Two-lane highway example
-* `bazel run //examples:intersection`: Three way intersection
-* `bazel run //examples:interaction_dataset`: Dataset replay
-* `bazel run //examples:benchmark_database`: Benchmarks behaviors using a scenario database
+* `bazel run //bark/examples:highway`: Two-lane highway example
+* `bazel run //bark/examples:intersection`: Three way intersection
+* `bazel run //bark/examples:interaction_dataset`: Dataset replay
+* `bazel run //bark/examples:benchmark_database`: Benchmarks behaviors using a scenario database

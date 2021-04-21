@@ -9,3 +9,9 @@
   left:0px;
   background: linear-gradient(to left top, rgb(3, 70, 147) 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
 }
+.aggBlue {
+  background-color: #0600ff;
+}
+.aggBlueText {
+  color: #0600ff;
+}

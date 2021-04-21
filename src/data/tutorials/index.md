@@ -2,7 +2,6 @@
 title: "Getting Started"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
-Before you start using BARK, you'll need to familiarize yourself with and install some core technologies. <br /><br />
 <b>Prerequisites</b> before you start developing:
 
 * [Bazel.build](https://bazel.build/): Build tool used in BARK:
@@ -21,7 +20,7 @@ To get BARK running, follow these steps:
 2. Create a virtual Python environment and install all packages by running `bash install.sh`.
 3. After the virtual Python environment has been created, activate it using `source dev_into.sh`.
 4. To make sure BARK is working run all tests using `bazel test //...` (make sure the virtual Python environment is activated).
-5. Now, you are ready to go! Try out one of the provided examples, e.g. the merging example: `bazel run //examples:merging`.
+5. Now, you are ready to go! Try out one of the provided examples, e.g. the merging example: `bazel run //bark/examples:merging`.
 
 
 ## Installing Python on macOS

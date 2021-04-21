@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import BarkMerging from "../data/images/merging.gif"
+import BarkMerging from "../data/images/bark.gif"
 import SEO from "../components/seo"
 
 const IndexPage = ({data}) => {
@@ -36,7 +36,7 @@ const IndexPage = ({data}) => {
             Unlike many simulation frameworks, BARK offers benchmarking using fully interactive behaviors.
           </p>
           <div class="flex justify-center py-2 mt-8">
-          <Link to="/tutorials/" style={{background: 'linear-gradient(190deg,#2983FB,#1353B9)'}} class="block shadow-2xl transition duration-500 ease-in-out border text-white focus:shadow-lg font-semibold py-4 px-6 rounded-lg ">
+          <Link to="/tutorials/" className="block aggBlue text-white font-semibold py-4 px-6">
             Get Started &#xbb;
           </Link>
           </div>
