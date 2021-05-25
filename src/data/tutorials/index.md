@@ -131,3 +131,15 @@ for _ in range(0, 3):
   for step in range(0, 90):
     env.step()
 ```
+<br />
+The video below provides a deeper understanding of and motivation for BARK:
+
+<br />
+<br />
+
+<div align="center">
+
+`youtube: https://www.youtube.com/watch?v=pJuvZkHkdu0`
+
+</div>
+<br />
