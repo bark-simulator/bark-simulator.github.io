@@ -15,7 +15,7 @@ The following prerequisites are required to build BARK from source:
 
 First, clone the BARK repository and enter the folder: `git clone https://github.com/bark-simulator/bark.git && cd bark`.
 Create a virtual Python environment and install the dependencies of BARK by running `bash install.sh` and enter it using `source dev_into.sh`.
-Before running any examples or implementing new code it is advised to make sure all modules of BARK work properly by running all tests using the command `bazel test //...`.
+Before running any examples or implementing new code, it is advised to make sure all modules of BARK work properly by running all tests using the command `bazel test //...`.
 Finally, you are ready to implement your own code or to run the first example that has been built from source using, e.g., `bazel run //bark/examples:merging`.
 A detailed video for installing BARK is shown here:
 

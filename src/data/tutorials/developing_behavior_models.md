@@ -3,7 +3,7 @@ title: "Developing Behavior Models"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-The `BehaviorModel` class is the core component that defines how an agent act/plans in the environment.
+The `BehaviorModel` class is the core component that defines how an agent acts/plans in the environment.
 In this tutorial, a simple Python behavior model is created that drives in a straight line.
 The video below provides additional insights on the development of behavior models for BARK.
 
@@ -19,12 +19,12 @@ The video below provides additional insights on the development of behavior mode
 
 All behavior models in BARK are derived from the `BehaviorModel` base-class.
 The base class implements three virtual functions that have to be (`Plan`, `Clone`) or can be overloaded (`ActionToBehavior`).
-`ActionToBehavior` in most cases does not need to be implemented besides if the action of the behavior model is set externally.
+The function `ActionToBehavior` does not need to be overloaded besides if the action of the behavior model is set externally.
 
 The core functionality resides within the `Plan` function that outputs a state-space trajectory for an agent.
-The `Clone` function specifies how a behavior model is cloned, e.g., if members should be preserved or be resetted.
+The `Clone` function specifies how a behavior model is cloned, e.g., if members should be preserved or be reset.
 
-A basic derived behavior model class is given by:
+A simple derived behavior model class is given by:
 
 ```python
 import numpy as np

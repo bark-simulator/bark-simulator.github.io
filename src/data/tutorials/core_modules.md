@@ -12,13 +12,13 @@ The <b>core modules</b> of the BARK simulator are:
 </br>
 </br>
 
-In this tutorial, a short overview of these components if given.
+In this tutorial, a short overview of these components is given.
 For deeper insights and a comprehensive overview of the components, we refer to our [documentation](https://bark-simulator.readthedocs.io/en/latest/).
 
 
 ## World and Observed World
 
-The `World` class is in the center of BARK and constains all objects, the map, agents, and all further objects required for the simulation.
+The `World` class is in the center of BARK and contains all objects, the map, agents, and all further objects required for the simulation.
 The world's step function advances the simulation by the given `delta_time` by calling `DoPlanning` and `DoExecution`.
 In the `DoPlanning` function each agent receives an observed world (a world that is derived from the actual world) and plans its action given that world.
 This enables introducing perturbation to each agent in BARK, such as measurement uncertainties or occlusions.
@@ -124,11 +124,11 @@ class Agent : public Object {
 ## Map Interface
 
 The `MapInterface` implements all map-related functionalities &ndash; the map itself, routing, and an abstraction layer.
-The `RoadGraph` enables querying the shortest route from a start to a goal position returning a sequence of roads and lane identifieres.
-Each agent has a routing in form of multiple connected roads called the `RoadCorridor` the agent (vehicle) should follow these and is only allowed to stay within this `RoadCorridor`.
+The `RoadGraph` enables querying the shortest route from a start to a goal position returning a sequence of roads and lane identifiers.
+Each agent has a routing in the form of multiple connected roads called the `RoadCorridor` the agent (vehicle) should follow these and is only allowed to stay within this `RoadCorridor`.
 
 
-The `RoadCorridor` polygon is depicted in light blue and the LaneCorridor's contour are depicted as blue lines in the figure below.
+The `RoadCorridor` polygon is depicted in light blue and the LaneCorridor's contours are depicted as blue lines in the figure below.
 
 ![RoadCorridor](../images/roadcorridor_[0, 2, 4].png)
 
