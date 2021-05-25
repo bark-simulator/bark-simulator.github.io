@@ -40,6 +40,9 @@ const Header = ({ siteTitle }) => {
               <Link to="/tutorials/" partiallyActive={true} activeClassName="block mt-4 lg:inline-block lg:mt-0 aggBlueText font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:aggBlueText mr-6">
                 Tutorials
               </Link>
+              <Link to="/publications/" activeClassName="block mt-4 lg:inline-block lg:mt-0 aggBlueText font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:aggBlueText mr-6">
+                Publications
+              </Link>
               <Link to="/about/" activeClassName="block mt-4 lg:inline-block lg:mt-0 aggBlueText font-semibold text-lg mr-6" class="transition duration-500 ease-in-out block mt-4 lg:inline-block lg:mt-0 text-gray text-lg hover:aggBlueText mr-6">
                 About
               </Link>

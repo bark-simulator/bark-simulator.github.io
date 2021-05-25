@@ -13,8 +13,8 @@ export default function BlogPost({ data }) {
       <div class="w-full px-4 md:px-0 md:w-1/6">
         <p class="mb-2 text-gray-500 uppercase tracking-wide font-bold text-sm">BARK</p>
         <Link to="/tutorials/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Getting Started</Link>
-        <Link to="/tutorials/first_example/" partiallyActive={true} class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">First Example</Link>
-        <Link to="/tutorials/building_blocks/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Building Blocks</Link>
+        <Link to="/tutorials/building_from_source/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Building From Source</Link>
+        <Link to="/tutorials/core_modules/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Core Modules</Link>
         <Link to="/tutorials/developing_behavior_models/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Developing Behavior Models</Link>
         <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Benchmarking</a>
         <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">Advanced Topics</a>

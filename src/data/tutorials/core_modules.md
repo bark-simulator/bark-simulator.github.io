@@ -1,20 +1,18 @@
 ---
-title: "Building Blocks"
+title: "Core Modules"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-In this section, we will highlight the main building blocks and components of the BARK simulator framework.
-</br>
-</br>
-The <b>core modules</b> of BARK are:
+The <b>core modules</b> of the BARK simulator are:
 
-* The `World` and `ObservedWorld` class that contains all elements of the simulation,
-* the `Agent` class that represents dynamic objects,
-* the `MapInterface` class that contains all map-related functionalities, and
-* the model classes that specify how an agent moves/acts within BARK.
+* The `World` and `ObservedWorld` that contain all agents, the map, goals, and more,
+* the `Agent` that represents an entity in the environment that is controlled by a policy,
+* the `MapInterface` that contains all map-related functionalities, and
+* the `BehaviorModel`, `ExecutionModel`, and `DynamicModel` that specify the characteristics of an agent.
 </br>
 </br>
-We only elaborate each of the above components slightly.
+
+In this tutorial, a short overview of these components if given.
 For deeper insights and a comprehensive overview of the components, we refer to our [documentation](https://bark-simulator.readthedocs.io/en/latest/).
 
 
@@ -158,7 +156,3 @@ struct RoadCorridor {
 The `RoadCorridor` polygon is depicted in light blue and the LaneCorridors (consecutive lanes) are outlined in blue:
 
 ![RoadCorridor](../images/roadcorridor_[0, 2, 4].png)
-
-## Models in BARK
-
-We will discuss the BARK models in the next section when we develop our first behavior model.
