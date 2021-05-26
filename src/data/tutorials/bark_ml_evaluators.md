@@ -2,10 +2,10 @@
 title: "Evaluators"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
-BARK-ML evaluators output a reward signal and whether an eipsode is terminal given an BARK observerd world.
+BARK-ML evaluators define the reward signal and wehther an episode is terminal or not.
 <br />
 <br />
-The base evaluator is given by:
+The base evaluator (`StateEvaluator`) is given by:
 ```python
 class StateEvaluator(ABC):
   """Evaluates the state of the environment
@@ -14,7 +14,7 @@ class StateEvaluator(ABC):
                params=ParameterServer()):
     self._params = params
     self._evaluators = {}
-  
+
   @abstractmethod
   def _add_evaluators(self):
     # here BARK evaluators are added
@@ -43,7 +43,7 @@ class StateEvaluator(ABC):
       world.AddEvaluator(key, evaluator)
     return world
 ```
-Each derived evaluator class needs to implement the abstract functions `_add_evaluators(...)` and `_evaluate(...)`.
+Each `Evaluator` needs to overload the abstract functions `_add_evaluators(...)` and `_evaluate(...)`.
 <br />
 <br />
 Currently available evaluators in BARK-ML:

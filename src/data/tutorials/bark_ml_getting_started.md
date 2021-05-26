@@ -1,24 +1,43 @@
 ---
-title: "Getting Started"
+title: "Getting Started With BARK-ML"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-BARK machine learning (BARK-ML) extends the BARK framework for artificial intelligence applications.
-It offers training environments as well as sophisticated agents that can master complex traffic scenarios, e.g. by using reinforcement learning.
-To use BARK-ML, you need to have the same [prerequisites](/tutorials/) satisfied as when using BARK.
+BARK-Machine Learning (BARK-ML) offers easy to use OpenAI-Gym environments and agents to learn behaviors for autonomous vehicles.
+It can be installed using `pip install bark-ml`. Building BARK-ML from source is similar to building BARK which is described [here](/tutorials/building_from_source/).
+<br />
+<br />
+BARK-ML provides blueprints for several scenarios. To run the merging scenario, run the following code:
 
-## Installing BARK-ML
-Similar to BARK, run these steps:
-1. Clone the BARK-ML repository and enter the folder: `git clone https://github.com/bark-simulator/bark-ml.git && cd bark-ml`.
-2. Create a virtual Python environment and install all packages by running `bash utils/install.sh`.
-3. After the virtual Python environment has been created, activate it using `source utils/dev_into.sh`.
-4. To make sure BARK is working run all tests using `bazel test //...` (make sure the virtual Python environment is activated).
-5. Now, you are ready to go! Try out one of the provided examples, e.g. the [TF-Agents](https://github.com/tensorflow/agents) example: `bazel run //examples:tfa`.
+```python
+import gym
+import numpy as np
+# registers bark-ml environments
+import bark_ml.environments.gym  # pylint: disable=unused-import
 
-## Modules
-The core modules of BARK-ML are:
-* <b>Behaviors</b>: Behavior models trained with e.g. reinforcement learning.
-* <b>Environments</b>: Environments based on blueprints.
-* <b>Observers</b>: Module that converts the BARK world into a observation, e.g. a vectorial representation.
-* <b>Evaluators</b>: Module evaluating the BARK world, determining the reward signal and whether an episode is terminal.
-* <b>Library Wrappers</b>: Integration of several machine learning libraries, such as [TF-Agents](https://github.com/tensorflow/agents).
+env = gym.make("merging-v0")
+
+initial_state = env.reset()
+done = False
+while done is False:
+  action = np.array([0., 0.]) # acceleration and steering-rate
+  observed_state, reward, done, info = env.step(action)
+  print(f"Observed state: {observed_state}, Action: {action}, "
+        f"Reward: {reward}, Done: {done}.")
+```
+
+<br />
+As in the BARK tutorial, the code above will result in running the merging scenario with the ego vehicle depicted in blue:
+
+<div align="center">
+
+![BARK Simulator](../images/merging.gif)
+
+</div>
+<br />
+
+BARK-ML extends the BARK environment with `Observer`, `Evaluator` and `Agent` modules.
+The `Observer` converts a BARK world into a suitable representation for machine learning &ndash; e.g., a feature vector or graph structure.
+The `Evaluator` returns a reward signal and determines whether the simulation state is terminal or not.
+And, finally, BARK-ML offers an `Agent` that is able to learn behaviors for autonomous systems.
+

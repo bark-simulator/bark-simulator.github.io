@@ -3,11 +3,12 @@ title: "Observers"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-BARK-ML observers convert the BARK world into a representation that can be used by machine learning algorithms, e.g. a vectorial representation.
-For example, a simple observer could concatenated the n-nearest states of other vehicles around the ego vehicle.
+BARK-ML observers convert the BARK world into a suitable input representation for machine learning, such as a vectorial representation that can be used by deep neural networks.
+There are several observers available ranging from concatenated state vector to graph representations.
 <br />
 <br />
-The base class of the observer looks as follows:
+The observer base class (`StateObserver`) looks as follows:
+
 ```python
 class StateObserver(ABC):
   def __init__(self,
@@ -18,10 +19,10 @@ class StateObserver(ABC):
   @abstractmethod
   def Observe(self, observed_world):
     """Observes the world
-    
+
     Arguments:
         world {bark.ObservedWorld} -- observed BARK world
-    
+
     Returns:
         np.array -- array
     """
@@ -35,10 +36,14 @@ class StateObserver(ABC):
     pass
 ```
 
-Each derived observer has to implements the `Observe` function and has to provide the `observation_space`.
+Each `Observer` in BARK has to implement two functions (`Observe` and `Reset`) and the property `observation_space`.
+The `Observe` function returns a machine learning friendly input representation, such as a numpy array or graph.
+Observers that trace vehicles over the course of an episode might require the `Reset` function to be overloaded to, e.g., reset member variables.
+And, finally, the property `observation_space` needs to be defined that tells the learning agent the dimension of the input space.
 <br />
 <br />
-Currently available standard observers in BARK-ML:
+BARK-ML implements currently these observers:
 * <b>NearestAgentsObserver</b>: Concatenates the states of the n-nearest agents that are within a defined threshold radius.
 * <b>NearestObserver</b>: C++ observer that concatenates the states of the n-nearest agents that are within a defined threshold radius.
-* <b>SimpleObserver</b>: Concatenates all agent states.
+* <b>SimpleObserver</b>: Concatenates the states of agents in the environment and returns a row vector.
+* <b>GraphObserver</b>: Returns a directed graph of N vehicles.
