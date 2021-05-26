@@ -52,7 +52,6 @@ const Layout = ({ children }) => {
       <CookieConsent
         location="bottom"
         buttonText="Accept"
-        cookieName="myAwesomeCookieName2"
         style={{ background: "#0600ff" }}
         cookieName="gatsby-gdpr-google-analytics"
         buttonStyle={{ backgroundColor:"#fff", color: "#0600ff", fontSize: "13px", fontWeight: "bold" }}
