@@ -18,23 +18,23 @@ const RoundComponent = ({ title, description, image, linkedinUrl, githubUrl, web
          <div class="w-full text-center text-3xl text-gray-800">
            {title}
          </div>
-         <div class="w-full text-center text-gray-700 tracking-wide leading-relaxed">
+         <div class="w-full text-center text-gray-700  mt-1 tracking-wide leading-relaxed">
            {description}
          </div>
-         <div class="flex-wrap text-center mt-2 space-x-3">
+         <div class="flex-wrap text-center mt-1 space-x-3">
           {linkedinUrl != "" &&
             <a href={linkedinUrl}>
-              <IoLogoLinkedin class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-blue-900 " />
+              <IoLogoLinkedin class="transition duration-500 ease-in-out inline-block w-6 h-6 text-gray-500 hover:text-blue-900 " />
             </a>
           }
           {githubUrl != "" &&
           <a href={githubUrl}>
-            <IoLogoGithub class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
+            <IoLogoGithub class="transition duration-500 ease-in-out inline-block w-6 h-6 text-gray-500 hover:text-gray-900" />
           </a>
           }
           {websiteUrl != "" &&
           <a href={websiteUrl}>
-            <IoMdGlobe class="transition duration-500 ease-in-out inline-block w-8 h-8 text-gray-500 hover:text-gray-900" />
+            <IoMdGlobe class="transition duration-500 ease-in-out inline-block w-6 h-6 text-gray-500 hover:text-gray-900" />
           </a>
           }
          </div>
