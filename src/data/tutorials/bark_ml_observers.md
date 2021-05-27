@@ -7,29 +7,28 @@ BARK-ML observers convert the BARK world into a suitable input representation fo
 There are several observers available ranging from concatenated state vector to graph representations.
 <br />
 <br />
-The observer base class (`StateObserver`) looks as follows:
+The observer base class (`BaseObserver`) looks as follows:
 
 ```python
-class StateObserver(ABC):
+class BaseObserver(ABC):
   def __init__(self,
                params):
     self._params = params
-    ...
 
   @abstractmethod
   def Observe(self, observed_world):
-    """Observes the world
+    """Generates an observation for the BARK world
 
     Arguments:
         world {bark.ObservedWorld} -- observed BARK world
 
     Returns:
-        np.array -- array
+        e.g., np.array, graph, ...
     """
     pass
 
   def Reset(self, world):
-    ...
+    pass
 
   @property
   def observation_space(self):

@@ -3,12 +3,27 @@ title: "Environments"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 
-BARK-ML OpenAI-Gym environments.
+BARK-ML provides several [OpenAI-Gym](https://gym.openai.com) environments implementing various driving scenarios (highway, merging, and intersection ones).
+
+<br />
 
 ### Highway Scenario
 
 ```python
+import gym
+import numpy as np
+# registers bark-ml environments
+import bark_ml.environments.gym  # pylint: disable=unused-import
+
 env = gym.make("highway-v0")
+
+initial_state = env.reset()
+terminal = False
+while terminal is False:
+  action = np.array([0., 0.]) # acceleration and steering-rate
+  observed_state, reward, terminal, info = env.step(action)
+  print(f"Observed state: {observed_state}, Action: {action}, "
+        f"Reward: {reward}, Terminal: {terminal}.")
 ```
 
 The highway scenario is a curved road with four lanes.
@@ -19,7 +34,7 @@ The highway scenario can use discrete or continuous actions:
 *   `highway-v0`: Continuous highway environment
 *   `highway-v1`: Discrete highway environment
 
-<div align="center">
+<div align="center" id="highway">
 
 ![BARK-ML highway environment](../images/bark_ml_highway_round.gif)
 
@@ -43,7 +58,7 @@ The merging scenario can use discrete or continuous actions:
 *   `merging-v1`: Discrete merging environment
 
 
-<div align="center">
+<div align="center" id="merging">
 
 ![BARK-ML merging environment](../images/bark_ml_merging.gif)
 
@@ -66,7 +81,7 @@ The unprotected left turn scenario can use discrete or continuous actions:
 *   `intersection-v1`: Discrete intersection environment
 
 
-<div align="center">
+<div align="center" id="intersection">
 
 ![BARK-ML intersection environment](../images/bark_ml_intersection.png)
 

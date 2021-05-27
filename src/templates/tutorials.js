@@ -23,7 +23,7 @@ export default function BlogPost({ data }) {
         <Link to="/tutorials/bark_ml_observers/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Observers</Link>
         <Link to="/tutorials/bark_ml_evaluators/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Evaluators</Link>
         <Link to="/tutorials/bark_ml_environments/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">Environments</Link>
-        <a href="#" class="text-gray-400 px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block">BARK-ML Agents</a>
+        <Link to="/tutorials/bark_ml_agents/" class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block" activeClassName="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block font-medium rounded absolute inset-0  aggBlueText">BARK-ML Agents</Link>
       </div>
       <div class="w-full mt-6 md:mt-0 lg:w-5/6 lg:pl-12 px-4 md:px-0 mb-6">
             <h1 class="text-4xl text-gray-800">{post.frontmatter.title}</h1>
