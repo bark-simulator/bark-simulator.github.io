@@ -16,14 +16,14 @@ const iros_tutorial = ({data}) => {
       }
     }
     return data.allFile.edges[0].node;
-  } 
+  }
   console.log(data.allMarkdownRemark);
   return (<Layout>
     <SEO title="IROS 2020 - BARK Tutorial" />
-    <div class="flex flex-wrap sm:justify-center">
+    <div class="flex flex-wrap sm:justify-center px-4 md:px-0">
       <div class="w-full lg:w-3/5">
         <h1 class="text-4xl text-center text-gray-800 mt-6">{data.markdownRemark.frontmatter.title}</h1>
-        <h1 class="text-xl mb-12 text-center text-gray-700 italic">{data.markdownRemark.frontmatter.subtitle}</h1>
+        <h1 class="text-xl mb-12 text-center text-gray-700 italic mt-1">{data.markdownRemark.frontmatter.subtitle}</h1>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
         <div class="flex flex-wrap sm:justify-center mb-12">
           <HorizontalComponent title="Prof. Alois Knoll" description={data.markdownRemark.frontmatter.knoll} image={GetNode(data, "knoll").childImageSharp.fluid} />
@@ -39,7 +39,7 @@ const iros_tutorial = ({data}) => {
           <Img objectFit="cover" fluid={GetNode(data, "Logo_fortiss_RGB_white-blue").childImageSharp.fluid} />
         </a>
         <a href="https://www.tum.de/" class="block w-full md:w-1/3 p-12">
-          <Img objectFit="cover" fluid={GetNode(data, "tum_logo").childImageSharp.fluid} /> 
+          <Img objectFit="cover" fluid={GetNode(data, "tum_logo").childImageSharp.fluid} />
         </a>
       </div>
       </div>

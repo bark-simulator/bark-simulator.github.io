@@ -14,7 +14,7 @@ const Publications = ({data}) => {
     <Layout>
     <SEO title="Publications" />
     <div class="flex flex-wrap justify-center">
-      <div class="w-3/5 mt-6 md:px-0 mb-6">
+      <div class="w-full md:w-3/5 mt-6 px-4 md:px-0 mb-6">
         <h1 class="text-4xl text-gray-800 text-center">Publications @BARK</h1>
         <br />
 
