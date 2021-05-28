@@ -28,6 +28,7 @@ For the example, some OpenDrive, goal definitions, and behavior models have to b
 <span class="token keyword">from</span> bark<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span>scenario<span class="token punctuation">.</span>scenario_generation<span class="token punctuation">.</span>config_with_ease <span class="token keyword">import</span> \
   LaneCorridorConfig<span class="token punctuation">,</span> ConfigWithEase
 <span class="token keyword">from</span> bark<span class="token punctuation">.</span>runtime<span class="token punctuation">.</span>runtime <span class="token keyword">import</span> Runtime
+<span class="token keyword">from</span> bark<span class="token punctuation">.</span>examples<span class="token punctuation">.</span>paths <span class="token keyword">import</span> Data
 
 <span class="token comment"># BARK c++ imports</span>
 <span class="token keyword">from</span> bark<span class="token punctuation">.</span>core<span class="token punctuation">.</span>world<span class="token punctuation">.</span>opendrive <span class="token keyword">import</span> <span class="token operator">*</span>
@@ -80,8 +81,7 @@ right_lane <span class="token operator">=</span> CustomLaneCorridorConfig<span c
 scenarios <span class="token operator">=</span> \
   ConfigWithEase<span class="token punctuation">(</span>
     num_scenarios<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span>
-    map_file_name<span class="token operator">=</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>dirname<span class="token punctuation">(</span>__file__<span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token string">"../runtime/tests/data/DR_DEU_Merging_MT_v01_shifted.xodr"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    map_file_name<span class="token operator">=</span>Data<span class="token punctuation">.</span>xodr_data<span class="token punctuation">(</span><span class="token string">"DR_DEU_Merging_MT_v01_shifted"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
     random_seed<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>
     params<span class="token operator">=</span>param_server<span class="token punctuation">,</span>
     lane_corridor_configs<span class="token operator">=</span><span class="token punctuation">[</span>left_lane<span class="token punctuation">,</span> right_lane<span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
