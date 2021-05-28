@@ -30,6 +30,7 @@ from bark.runtime.viewer.matplotlib_viewer import MPViewer
 from bark.runtime.scenario.scenario_generation.config_with_ease import \
   LaneCorridorConfig, ConfigWithEase
 from bark.runtime.runtime import Runtime
+from bark.examples.paths import Data
 
 # BARK c++ imports
 from bark.core.world.opendrive import *
@@ -93,8 +94,7 @@ right_lane = CustomLaneCorridorConfig(params=param_server,
 scenarios = \
   ConfigWithEase(
     num_scenarios=3,
-    map_file_name=os.path.join(os.path.dirname(__file__),
-      "../runtime/tests/data/DR_DEU_Merging_MT_v01_shifted.xodr"),
+    map_file_name=Data.xodr_data("DR_DEU_Merging_MT_v01_shifted"),
     random_seed=0,
     params=param_server,
     lane_corridor_configs=[left_lane, right_lane])
