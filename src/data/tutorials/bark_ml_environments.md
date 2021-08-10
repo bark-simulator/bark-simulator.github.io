@@ -1,5 +1,5 @@
 ---
-title: "Environments"
+title: "Gym Environments for Autonomous Driving"
 subtitle: "Las Vegas, 25th of October, 10am to 1pm"
 ---
 

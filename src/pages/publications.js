@@ -19,6 +19,12 @@ const Publications = ({data}) => {
         <br />
 
         <h2 className="text-small text-gray-500 font-semibold mb-1">2021</h2>
+        <p className="mb-3">
+          <em>Julian Bernhard, Patrick Hart, Amit Sahu, Christoph Schöller, Michell Guzman Cancimance</em>. "<b className="italic">Risk-Based Safety Envelopes for Autonomous Vehicles Under Perception Uncertainty.</b>" arXiv PrePrint.
+          <a href="https://arxiv.org/pdf/2107.09918" className="inline-block">
+            <BiLinkExternal className="inline-block aggBlueText" />
+          </a>
+        </p>
         <p className="mb-6">
           <em>Julian Bernhard and Alois Knoll</em>. "<b className="italic">Risk-Constrained Interactive Safety under Behavior Uncertainty for Autonomous Driving.</b>" IEEE Intelligent Vehicles Symposium (IV).
           <a href="https://arxiv.org/abs/2102.03053" className="inline-block">
