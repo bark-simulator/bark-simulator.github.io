@@ -50,7 +50,7 @@ export const query = graphql`
         }
       }
     }
-    esterle: file(relativePath: { eq: "images/esterle.jpeg" }) {
+    esterle: file(relativePath: { eq: "images/esterle.jpg" }) {
       id,
       childImageSharp {
         fluid(maxWidth: 1024) {
